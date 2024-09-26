@@ -1,0 +1,1 @@
+export { default as Donation_Success  } from "./Donation-Success-section/Donation_Success";

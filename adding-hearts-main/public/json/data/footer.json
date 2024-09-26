@@ -1,0 +1,32 @@
+[
+    {
+        "slug": "/",
+        "logo": "/images/logo.jpeg",
+        "alt": "logo",
+        "label": "",
+        "links": [
+            {
+                "href": "#",
+                "text": "@ 2024 Kids Care"
+            }
+        ],
+        "socialIcons": [
+            {
+                "href": "#",
+                "iconClass": "fa-facebook-f"
+            },
+            {
+                "href": "#",
+                "iconClass": "fa-instagram"
+            },
+            {
+                "href": "#",
+                "iconClass": "fa-web"
+            },
+            {
+                "href": "#",
+                "iconClass": "fa-telegram"
+            }
+        ]
+    }
+]

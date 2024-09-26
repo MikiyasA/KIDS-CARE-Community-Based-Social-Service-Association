@@ -1,0 +1,31 @@
+[
+    {
+        "logo": "/images/logo.jpeg",
+        "dark_logo": "/images/logo.jpeg",
+        "menu": [
+            {
+                "slug": "/",
+                "title": "Home"
+            },
+            {
+                "slug": "/about-us",
+                "title": "About us"
+            },
+            {
+                "slug": "/donation",
+                "title": "Donation"
+            },
+            {
+                "slug": "/portfolio",
+                "title": "Portfolio"
+            },
+            {
+                "slug": "/contact",
+                "title": "Contact us"
+            }
+        ],
+        "btn_label": "Donate",
+        "btn_slug": "/donation"
+    }
+]
+

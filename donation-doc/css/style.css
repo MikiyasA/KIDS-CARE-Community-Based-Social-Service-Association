@@ -1,0 +1,598 @@
+/* =====================================
+    Template Name: Business Advisory
+    Author Name: WebbyCrown
+    Description: Business Advisory - HTML5 Template.
+    Version:1.0
+========================================*/
+
+/*======================================
+[ CSS Table of contents ]
+01. web font generator CSS
+02. General CSS
+03. Preloader CSS
+04. Header CSS
+05. Left menu bar CSS
+06. Documentation right part CSS
+07. Style Guide CSS
+========================================*/
+
+
+/*======================================
+     01. Google font here
+========================================*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/*======================================
+     02. General CSS
+========================================*/
+
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
+    line-height: 24px;
+    background: #F6F6F6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: #00563c;
+}
+
+p {
+    font-size: 16px;
+    color: #000000;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0 0 25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+button,
+input {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main-wrap {
+    display: flex;
+}
+
+/*======================================
+     End General CSS
+========================================*/
+
+/*======================================
+    03. Preloader CSS
+========================================*/
+.preloader {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.preloader-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preloader-icon {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    padding: 0px;
+}
+
+.preloader-icon span {
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: rgb(66 95 87/90%);
+    animation: 1.6s linear 0s infinite normal none running preloader-fx;
+}
+
+.preloader-icon span:last-child {
+    animation-delay: -0.8s;
+}
+
+@keyframes preloader-fx {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes preloader-fx {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+
+/*======================================
+    end Preloader CSS
+========================================*/
+
+
+/*======================================
+    04. Header CSS
+========================================*/
+.header {
+    display: none;
+}
+
+
+/*======================================
+   End Header CSS
+========================================*/
+
+
+/*======================================
+    05. Left menu bar CSS
+========================================*/
+.left-menu-bar {
+    background: #fff;
+    padding: 0px 0px 50px;
+    height: 100vh;
+    width: 350px;
+    flex-shrink: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.left-wrap {
+    width: 100%;
+    text-align: center;
+    padding: 50px 28px 0;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.left-menu-bar .toggle-menu {
+    display: none;
+}
+
+.left-logo {
+    text-align: center;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #E0E9E9;
+}
+
+.left-logo a {
+    /*border-radius: 100%;
+    border: 10px solid #DDEDE8;*/
+    border: 10px solid rgb(66 95 87/90%);
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.left-logo h1 {
+    font-size: 25px;
+    line-height: 32px;
+    color: #000;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.left-logo h1 span {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    color: #6e6e6e;
+    font-weight: 600;
+}
+
+.menubar {
+    padding: 45px 0 0 0;
+}
+
+.menu li {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.menu li a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    padding: 10px 15px;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.menu li .dropdown-wrap a {
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 25px;
+}
+
+.menu li a.active,
+.menu li a:hover {
+    /*background: #DDEDE8;*/
+    background: rgb(66 95 87/90%);
+}
+
+nav.menubar .menu .scroll a.active {
+    color: #1e170b;
+}
+
+-wcright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 99;
+    padding: 15px 10px;
+    text-align: center;
+    border-top: 1px solid #e0e9e9;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+/*======================================
+    End Left menu bar CSS
+========================================*/
+
+
+/*======================================
+    06. Documentation right part CSS
+========================================*/
+.documentation-right-part {
+    width: 100%;
+    padding-left: 350px;
+}
+
+.documentation-section .title {
+    /*background: #D4EBE4;*/
+    background: rgb(66 95 87/90%);
+    padding: 13px 45px;
+    color: #1e170b;
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 600;
+    margin: 0;
+}
+
+.documentation-body {
+    padding: 35px 45px 25px;
+}
+
+.documentation-body .label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.documentation-body h3 {
+    padding: 15px 10px;
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 600;
+    margin: 0;
+}
+
+.documentation-body h5 {
+    font-size: 18px;
+    margin: 20px 0 15px;
+    color: #000;
+    line-height: normal;
+    font-weight: 700;
+    margin: 0 0 25px;
+}
+
+.documentation-img {
+    border-radius: 16px;
+    background: #DDEDE8;
+    border: 16px solid #DDEDE8;
+    max-width: fit-content;
+    margin-top: 20px;
+}
+
+.documentation-img img {
+    border-radius: 16px;
+    display: block;
+}
+
+/* .documentation-body h5 {
+    font-size: 22px;
+    margin: 20px 0 15px;
+    font-weight: normal;
+} */
+
+.documentation-body ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.documentation-body .wc-ul {
+    padding-left: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.documentation-body ul li {
+    list-style-type: disc;
+}
+
+.documentation-body a:hover {
+    text-decoration: underline;
+}
+
+/*======================================
+    End Documentation right part CSS
+========================================*/
+
+/*======================================
+    06. Style Guide CSS
+========================================*/
+.color-guide {
+    margin: 0 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 !important;
+}
+
+.color-guide li {
+    list-style-type: none !important;
+    text-align: center;
+}
+
+.color-guide li .color-bg {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.color-guide li h5 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.heading-style-h1 h1 {
+    font-size: 80px;
+    letter-spacing: -2px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.heading-style-h2 h2 {
+    font-size: 55px;
+    letter-spacing: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.heading-style-h3 h3 {
+    font-size: 25px;
+    letter-spacing: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.heading-style-h4 h4 {
+    font-size: 22px;
+    letter-spacing: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.heading-style-h5 h5 {
+    font-size: 20px;
+    letter-spacing: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.heading-style-h6 h6 {
+    font-size: 18px;
+    letter-spacing: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.heading-style-p p {
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: normal;
+    color: black;
+    margin: 0;
+    line-height: 30px;
+}
+
+.heading-style-button .btn {
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 50px;
+    padding: 11px 35px;
+    display: inline-block;
+    transition: 0.5s;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: #0E5E6F;
+    color: #1e170b;
+    font-weight: 700;
+    letter-spacing: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.heading-wrap {
+    margin: 30px 0px;
+}
+
+.heading-wrap .title-h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.heading-style-guide {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.heading-right {
+    background: #dfdfdf;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.heading-style {
+    padding: 15px 0 40px !important;
+    margin: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heading-style li {
+    list-style-type: none !important;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.heading-style li label {
+    display: block;
+    color: #777;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.heading-style li span {
+    display: block;
+    color: #000;
+    font-size: 22px;
+}
+
+.dropbtn {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    padding: 10px 15px;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: rgb(66 95 87/90%);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    /* background-color: #f1f1f1; */
+    min-width: 160px;
+    overflow: auto;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+.dropdown-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+/*======================================
+    End Style Guide CSS
+========================================*/

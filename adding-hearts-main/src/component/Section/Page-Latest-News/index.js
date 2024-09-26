@@ -1,0 +1,1 @@
+export { default as Latest_News  } from "./Latest-News-section/Latest_News";

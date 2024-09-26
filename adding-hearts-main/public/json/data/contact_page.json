@@ -1,0 +1,41 @@
+[
+    {
+        "title": "Contact Us",
+        "address": [
+            {
+                "label": "Mrs. Aster Fisseha, Founder and Executive Director"
+            },
+            {
+                "slug": "tel:+251911405214",
+                "label": "+251911405214"
+            },
+            {
+                "slug": "mailto:afesseha2007@gmail.com",
+                "label": "afesseha2007@gmail.com"
+            },
+            {
+                "label": "Dr. Teshome Legesse, Program Director"
+            },
+            {
+                "slug": "tel:+251911238138",
+                "label": "+251911238138"
+            },
+            {
+                "slug": "mailto:tbelachew69@gmail.com",
+                "label": "tbelachew69@gmail.com"
+            },
+            {
+                "label": "Mrs. Wubitu Eyob, Finance Head"
+            },
+            {
+                "slug": "tel:+251922871809",
+                "label": "+251922871809"
+            },
+            {
+                "slug": "mailto:wubitueyob@gmail.com",
+                "label": "wubitueyob@gmail.com"
+            }
+        ],
+        "location_link": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4114.690283471513!2d38.7633655!3d9.0407584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8fa61da98247%3A0x5bedaa1afaba7141!2sKIDS%20CARE%20ETHIOPIA!5e1!3m2!1sen!2skw!4v1725808903713!5m2!1sen!2skw"
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Latest News",
+        "label": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus",
+        "image": "/images/latest.png",
+        "alt": "../",
+        "date": "10 jun,2022",
+        "slug": "news",
+        "description": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias",
+        "detail": [
+            {
+                "date": "10 jun,2022",
+                "slug": "news-details",
+                "title": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis"
+            },
+            {
+                "date": "10 jun,2022",
+                "slug": "news-details",
+                "title": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis"
+            },
+            {
+                "date": "10 jun,2022",
+                "slug": "news-details",
+                "title": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis"
+            },
+            {
+                "date": "10 jun,2022",
+                "slug": "news-details",
+                "title": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis"
+            }
+        ]
+    }
+]

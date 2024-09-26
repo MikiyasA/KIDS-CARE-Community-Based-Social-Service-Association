@@ -1,0 +1,13 @@
+[
+    {
+        "label": "Empowering Futures, Transforming Lives",
+        "linkHref": "/about-us",
+        "linkText": "About us",
+        "paragraphs": [
+            "KCCBSSA, formerly known as Kids Care Children’s Welfare Association, has been dedicated to uplifting destitute children and mothers since its establishment in 2001. As a non-profit humanitarian organization, we strive to create a society where every child can experience holistic development—physically, mentally, and socially. Our mission focuses on alleviating poverty and addressing the multifaceted challenges faced by vulnerable families through community engagement and support.",
+            "Through various programs, including free kindergarten services, vocational training, and material support for families, KCCBSSA has positively impacted thousands of lives. Our commitment extends to empowering women through income-generating activities and providing essential services for children in challenging circumstances, such as those living with their mothers in prison. Together with our community partners, we aim to foster a brighter future for the next generation."
+        ],
+        "image":"/images/about.JPG",
+        "alt":"image"
+    }
+]

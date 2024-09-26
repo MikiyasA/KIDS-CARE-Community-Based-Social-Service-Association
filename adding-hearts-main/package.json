@@ -1,0 +1,32 @@
+{
+  "name": "adding_hearts",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "aos": "^2.3.4",
+    "axios": "^1.6.5",
+    "bootstrap": "^5.3.2",
+    "next": "^14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-modal-video": "^2.0.2",
+    "reactstrap": "^9.2.2",
+    "sass": "^1.69.7",
+    "swiper": "^11.0.5",
+    "swiper-react": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4"
+  }
+}

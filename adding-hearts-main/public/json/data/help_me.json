@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Kids Care CBSSA",
+        "label": "",
+        "detail": [
+            {
+                "image": "/images/Our-Presence.png",
+                "alt": "Our-Presence",
+                "name": "Our Presence",
+                "paragraphs": [
+                    "<p> Kids Care Association, based in Addis Ababa for over 20 years, provides essential support to underprivileged children, families, and young adults through daycare centers, vocational training, and direct financial assistance. By pooling donations, we ensure effective resource allocation and continuous aid to those in need. </p>"
+                ]
+            },
+            {
+                "image": "/images/Our-Partners.png",
+                "alt": "Our-Partners",
+                "name": "Our Partners",
+                "paragraphs": [
+                    "<p> At Kids Care Association, our mission to support underprivileged children, families, and young adults in Addis Ababa is strengthened through the invaluable partnerships we have cultivated over the past 20 years. These collaborations enable us to provide essential services such as daycare centers, vocational training, and direct financial assistance, ensuring that our resources are effectively allocated and our aid remains continuous. </p>"
+                ]
+            },
+            {
+                "image": "/images/Pro-Kind.png",
+                "alt": "Pro-Kind",
+                "name": "Pro Kind",
+                "paragraphs": [
+                    "<p> Pro Kind has been a steadfast partner in our journey, sharing our commitment to improving the lives of those in need. Their generous contributions and active involvement have allowed us to expand our daycare services, providing a safe and nurturing environment for countless children. Together, we work towards creating brighter futures and empowering the next generation. </p>"
+                ]
+            },
+            {
+                "image": "/images/St-Joseph-School.png",
+                "alt": "St-Joseph-School",
+                "name": "St. Joseph School",
+                "paragraphs": [
+                    "<p> St. Joseph School has played a crucial role in our programs. This partnership not only enhances the quality of education and training we provide but also opens up new opportunities for our beneficiaries, enabling them to secure better employment and achieve financial independence. </p>"
+                ]
+            },
+            {
+                "image": "/images/help-2-1.png",
+                "alt": "help-2",
+                "name": "",
+                "paragraphs": [
+                    "<p> We are deeply grateful for the unwavering support of Pro Kind and St. Joseph School. Their dedication and collaboration have been instrumental in our efforts to uplift and empower the underprivileged communities of Addis Ababa. Together, we continue to make a meaningful impact, transforming lives and fostering hope for a better tomorrow.  </p>"
+                ]
+            }
+        ]
+    }
+]

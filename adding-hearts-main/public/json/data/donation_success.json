@@ -1,0 +1,43 @@
+[
+    {
+        "main_title": "Order Success",
+        "title": "Donation Successful",
+        "label": "Your Donation has been placed successfully; please review the Donation below",
+        "detail_title": "Donation Detail",
+        "donation_details": [
+            {
+                "label": "Description",
+                "value": "-"
+            },
+            {
+                "label": "Gateway",
+                "value": "Offline"
+            },
+            {
+                "label": "Transaction status",
+                "value": "Pending payment"
+            },
+            {
+                "label": "Donation total",
+                "value": "$ 50"
+            },
+            {
+                "label": "Currency",
+                "value": "USD"
+            }
+        ],
+        "payment_title": "Offline Payment Instruction",
+        "payment_label": [
+            "Item name",
+            "Price",
+            "Quantity",
+            "Total"
+        ],
+        "payment_value": [
+            "Lorem ipsum",
+            "$ 50",
+            "1",
+            "$ 50"
+        ]
+    }
+]
