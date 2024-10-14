@@ -1,57 +1,19 @@
 [
     {
         "title": "Sponsors & Partners",
-        "label": "Ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
+        "label": "We are deeply grateful for the unwavering support of Pro Kind and St. Joseph School. Their dedication and collaboration have been instrumental in our efforts to uplift and empower the underprivileged communities of Addis Ababa. Together, we continue to make a meaningful impact, transforming lives and fostering hope for a better tomorrow.",
         "sponsor": [
             {
-                "src": "/images/img-1.webp",
+                "src": "/images/Saint-Joseph-School.jpg",
                 "width": 123,
-                "height": 91
+                "height": 91,
+                "link": "https://lasallian.info/what-we-do/twinning/st-joseph-school-addis-ababa-ethiopia/"
             },
             {
-                "src": "/images/img-2.png",
+                "src": "/images/pro-kind_6.jpg",
                 "width": 204,
-                "height": 67
-            },
-            {
-                "src": "/images/img-3.webp",
-                "width": 131,
-                "height": 96
-            },
-            {
-                "src": "/images/img-4.png",
-                "width": 99,
-                "height": 116
-            },
-            {
-                "src": "/images/img-5.png",
-                "width": 248,
-                "height": 68
-            },
-            {
-                "src": "/images/img-6.png",
-                "width": 123,
-                "height": 94
-            },
-            {
-                "src": "/images/img-7.png",
-                "width": 276,
-                "height": 94
-            },
-            {
-                "src": "/images/img-8.png",
-                "width": 105,
-                "height": 95
-            },
-            {
-                "src": "/images/img-9.png",
-                "width": 136,
-                "height": 96
-            },
-            {
-                "src": "/images/img-10.png",
-                "width": 120,
-                "height": 120
+                "height": 67,
+                "link": "https://www.prokind.ch/"
             }
         ]
     }

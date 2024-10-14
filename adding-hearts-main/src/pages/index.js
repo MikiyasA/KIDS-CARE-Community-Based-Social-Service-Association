@@ -54,12 +54,13 @@ export default function Home() {
       <Header initialValues={Header_Data} />
       <Hero initialValues={Hero_Data} />
       <About_US initialValues={About_US_Data} />
-      <Help_Me initialValues={Help_Me_Data} /> {/* title changed to Kids Care CBSSA */}
+      {/* <Help_Me initialValues={Help_Me_Data} />{" "} */}
+      {/* title changed to Kids Care CBSSA */}
       {/* <Timeline initialValues={Timeline_Data} /> */}
       <Sponser initialValues={Sponser_Data} />
       {/* <Latest initialValues={Latest_Data} /> */}
       <Chariti_Page_Wrapper initialValues={Chariti_Page_Wrapper_Data} />
-      <Our_Latest_News initialValues={Our_Latest_News_Data} />
+      {/* <Our_Latest_News initialValues={Our_Latest_News_Data} /> */}
       <Contact initialValues={Contact_Data} />
       <Footer initialValues={Footer_Data} />
     </>

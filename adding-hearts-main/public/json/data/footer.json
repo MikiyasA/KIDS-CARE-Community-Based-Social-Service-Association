@@ -12,19 +12,12 @@
         ],
         "socialIcons": [
             {
-                "href": "#",
+                "href": "https://www.facebook.com/people/Kids-Care-CBSSA-Ethiopia/100083057392646/",
                 "iconClass": "fa-facebook-f"
             },
+           
             {
-                "href": "#",
-                "iconClass": "fa-instagram"
-            },
-            {
-                "href": "#",
-                "iconClass": "fa-web"
-            },
-            {
-                "href": "#",
+                "href": "https://t.me/KCCBSSA",
                 "iconClass": "fa-telegram"
             }
         ]

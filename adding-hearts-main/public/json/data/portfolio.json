@@ -1,64 +1,64 @@
 [
     {
-        "title": "Portfolio",
+        "title": "Our Program",
         "label": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
         "detail": [
             {
-                "slug": "/portfolio-details/Socio-Economic-Development-Program",
+                "slug": "/our-program-details/Socio-Economic-Development-Program",
                 "title": "Socio-Economic Development Program",
                 "image": "/images/Socio-Economic-Development-Program.jpg",
                 "alt": "Socio-Economic Development Program"
             },
             {
-                "slug": "/portfolio-details/Livelihood-Enhancement-Program",
+                "slug": "/our-program-details/Livelihood-Enhancement-Program",
                 "title": "Livelihood Enhancement Program",
                 "image": "/images/Livelihood-Enhancement-Program.jpg",
                 "alt": "Livelihood-Enhancement-Program"
             },
             {
-                "slug": "/portfolio-details/Education-Program",
+                "slug": "/our-program-details/Education-Program",
                 "title": "Education Program",
                 "image": "/images/Education-Program.jpg",
                 "alt": "Education-Program"
             },
             {
-                "slug": "/portfolio-details/Sponsorship-Program",
+                "slug": "/our-program-details/Sponsorship-Program",
                 "title": "Sponsorship Program",
                 "image": "/images/Sponsorship-Program.jpg",
                 "alt": "Sponsorship-Program"
             },
             {
-                "slug": "/portfolio-details/Material-Support-for-Vulnerable-Groups",
+                "slug": "/our-program-details/Material-Support-for-Vulnerable-Groups",
                 "title": "Material Support for Vulnerable Groups",
-                "image": "/images/Material-Support-for-Vulnerable-Groups.JPG",
+                "image": "/images/MaterialSepport.JPG",
                 "alt": "Material Support for Vulnerable Groups"
             },
             {
-                "slug": "/portfolio-details/Initial-Capital-Support-for-Women-IGAs",
+                "slug": "/our-program-details/Initial-Capital-Support-for-Women-IGAs",
                 "title": "Initial Capital Support for Women IGAs",
                 "image": "/images/Initial-Capital-Support-for-Women-IGAs.jpg",
                 "alt": "Initial Capital Support for Women IGAs"
             },
             {
-                "slug": "/portfolio-details",
+                "slug": "/our-program-details",
                 "title": "Vocational Training Services",
                 "image": "/images/Vocational-Training-Services.jpg",
                 "alt": "Vocational Training Services"
             },
             {
-                "slug": "/portfolio-details",
+                "slug": "/our-program-details",
                 "title": "Prison Services",
-                "image": "/images/image-7.png",
+                "image": "/images/PrisonAdministration.png",
                 "alt": "image-7"
             },
             {
-                "slug": "/portfolio-details",
+                "slug": "/our-program-details",
                 "title": "Emergency Response Support",
-                "image": "/images/image-7.png",
+                "image": "/images/KalitiBuilding.png",
                 "alt": "image-7"
             },
             {
-                "slug": "/portfolio-details/KCCBSSA-Girls-Football-Team-Support",
+                "slug": "/our-program-details/KCCBSSA-Girls-Football-Team-Support",
                 "title": "KCCBSSA Girls Football Team Support",
                 "image": "/images/KCCBSSA-Girls-Football-Team-Support.jpg",
                 "alt": "KCCBSSA Girls Football Team Support"

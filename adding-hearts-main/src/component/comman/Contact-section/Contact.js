@@ -8,21 +8,21 @@ export default function Contact({ initialValues }) {
 
   const [address_save_errors, setaddress_save_errors] = useState({});
 
-  const save_account_details = event => {
+  const save_account_details = async (event) => {
     event.preventDefault();
     const formElement = document.querySelector("#account_details_form");
     const formData = new FormData(formElement);
 
-    let name = formData.get("Fullname");
+    let fullName = formData.get("fullName");
     let email = formData.get("email");
     let subject = formData.get("subject");
-    let number = formData.get("number");
+    let phone = formData.get("phone");
     let messages = formData.get("messages");
-
+console.log(fullName)
     const error = {};
 
-    if (!name || name.trim() === "") {
-      error.name = "Name is required";
+    if (!fullName || fullName.trim() === "") {
+      error.fullName = "Name is required";
     }
 
     if (!email || email.trim() === "") {
@@ -35,10 +35,10 @@ export default function Contact({ initialValues }) {
       error.subject = "subject is required";
     }
 
-    if (!number || number.trim() === "") {
-      error.number = "number is required";
-    } else if (number.length < 10) {
-      error.number = "enter valid number";
+    if (!phone || phone.trim() === "") {
+      error.phone = "phone is required";
+    } else if (phone.length < 10) {
+      error.phone = "enter valid phone";
     }
 
     if (!messages || messages.trim() === "") {
@@ -52,13 +52,28 @@ export default function Contact({ initialValues }) {
     }
 
     let data = {
-      name: name,
+      fullName: fullName,
       email: email,
-      number: number,
+      phone: phone,
       subject: subject,
-      messages: messages,
+      message: messages,
     };
     // console.log(data)
+    console.log(data)
+      const response = await fetch('/api/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+    
+      const result = await response.json();
+      if (result.result === 'success') {
+        alert('Form submitted successfully!');
+      } else {
+        alert('There was an error submitting the form.');
+      }
   };
 
   return (
@@ -89,7 +104,7 @@ export default function Contact({ initialValues }) {
                         <input
                           type="text"
                           className="form-control"
-                          name="name"
+                          name="fullName"
                           placeholder="Full name*"
                         />
                         {address_save_errors.name && (
@@ -121,7 +136,7 @@ export default function Contact({ initialValues }) {
                         <input
                           type="text"
                           className="form-control"
-                          name="number"
+                          name="phone"
                           placeholder="Phone*"
                         />
                         {address_save_errors.number && (

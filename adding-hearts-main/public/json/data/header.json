@@ -16,8 +16,12 @@
                 "title": "Donation"
             },
             {
-                "slug": "/portfolio",
-                "title": "Portfolio"
+                "slug": "/news",
+                "title": "News"
+            },
+            {
+                "slug": "/our-program",
+                "title": "Programs"
             },
             {
                 "slug": "/contact",

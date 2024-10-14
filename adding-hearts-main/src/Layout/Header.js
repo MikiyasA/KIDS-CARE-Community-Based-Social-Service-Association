@@ -2,6 +2,9 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { Group } from "@mantine/core";
+
+import UserAction from "@/component/Additional/Section/UserAction";
 
 export default function Header({ initialValues }) {
   // console.log(initialValues);
@@ -10,7 +13,7 @@ export default function Header({ initialValues }) {
 
   const router = useRouter();
 
-  const acitive_class_slug = slug => {
+  const acitive_class_slug = (slug) => {
     if (router.asPath === slug) {
       return router.asPath === slug ? { fontWeight: "600" } : "";
     } else if (router.asPath === "/404") {
@@ -18,9 +21,9 @@ export default function Header({ initialValues }) {
     }
   };
 
-  const handelOpenMenu = e => {
+  const handelOpenMenu = (e) => {
     e.preventDefault();
-    setOpenMenu(prevClass => !prevClass);
+    setOpenMenu((prevClass) => !prevClass);
   };
 
   useEffect(() => {
@@ -64,12 +67,13 @@ export default function Header({ initialValues }) {
         <header
           id="header"
           className={`d-flex align-items-center ${headerClasses}`}
-          style={{ zIndex: VideoPopup ? 0 : 997 }}
-          key={index}>
+          style={{ zIndex: VideoPopup ? 0 : 150 }}
+          key={index}
+        >
           <span
             className="d-none"
             id="open-popup"
-            onClick={e => {
+            onClick={(e) => {
               setVideoPopup(!VideoPopup);
             }}
           />
@@ -80,7 +84,8 @@ export default function Header({ initialValues }) {
                   id="navbar"
                   className={`navbar order-last order-lg-0 ${
                     OpenMenu === true ? "nav-menu-active navbar-mobile" : " "
-                  }`}>
+                  }`}
+                >
                   <div className="logo no-caret">
                     <Link href="/">
                       <Image
@@ -103,7 +108,8 @@ export default function Header({ initialValues }) {
                       viewBox="0 0 379 375"
                       className="menu-svg"
                       fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         id="Extended_image wrap_1"
                         fillRule="evenodd"
@@ -229,7 +235,8 @@ export default function Header({ initialValues }) {
                               <Link
                                 className="nav-link scrollto"
                                 href={menu_data.slug}
-                                style={acitive_class_slug(menu_data.slug)}>
+                                style={acitive_class_slug(menu_data.slug)}
+                              >
                                 {menu_data.title}{" "}
                               </Link>
                               {subMenu}
@@ -240,9 +247,12 @@ export default function Header({ initialValues }) {
                       })}
                   </ul>
                   <div className="wc-btn">
-                    <Link href={data.btn_slug} className="btn btn-primary">
-                      {data.btn_label}
-                    </Link>
+                    <Group>
+                      <Link href={data.btn_slug} className="btn btn-primary">
+                        {data.btn_label}
+                      </Link>
+                      <UserAction />
+                    </Group>
                   </div>
                 </nav>
               </div>
@@ -270,9 +280,10 @@ export default function Header({ initialValues }) {
                     className={`mobile-nav-toggle ${
                       OpenMenu === true ? "nav-toggle-active bi-list bi-x" : " "
                     }`}
-                    onClick={e => {
+                    onClick={(e) => {
                       handelOpenMenu(e);
-                    }}>
+                    }}
+                  >
                     {/* {" "}
                     {OpenMenu === false ? (
                       <i
@@ -289,9 +300,12 @@ export default function Header({ initialValues }) {
                   </Link>
                 </div>
                 <div className="col-md-3 col-sm-5 d-block d-lg-none wc-btn outer-box">
-                  <Link href={data.btn_slug} className="btn btn-primary">
-                    {data.btn_label}
-                  </Link>
+                  <Group gap={5}>
+                    <Link href={data.btn_slug} className="btn btn-primary">
+                      {data.btn_label}
+                    </Link>
+                    <UserAction />
+                  </Group>
                 </div>
               </div>
             </div>

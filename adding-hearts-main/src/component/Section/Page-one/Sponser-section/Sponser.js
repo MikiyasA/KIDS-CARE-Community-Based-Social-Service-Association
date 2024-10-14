@@ -28,15 +28,21 @@ export default function Sponser({ initialValues }) {
                           key={index}
                           style={{
                             width: `${sponsor_data.width}px`,
-                            height: `${sponsor_data.height}px`,
+                            // height: `${sponsor_data.height}px`,
                           }}
                         >
-                          <Image
-                            src={sponsor_data.src}
-                            alt={`sponsor-${index}`}
-                            width={sponsor_data.width}
-                            height={sponsor_data.height}
-                          />
+                          <a
+                            href={sponsor_data.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Image
+                              src={sponsor_data.src}
+                              alt={`sponsor-${index}`}
+                              width={sponsor_data.width}
+                              height={sponsor_data.height}
+                            />
+                          </a>
                         </div>
                       );
                     })}

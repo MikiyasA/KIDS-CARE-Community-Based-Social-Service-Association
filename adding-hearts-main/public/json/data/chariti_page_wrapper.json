@@ -1,38 +1,42 @@
 [
     {
         "image": "/images/Socio-Economic-Development-Program.jpg",
-        "slug": "portfolio-details/Socio-Economic-Development-Program"
+        "slug": "our-program/Socio-Economic-Development-Program"
     },
     {
         "image": "/images/Livelihood-Enhancement-Program.jpg",
-        "slug": "portfolio-details/Livelihood-Enhancement-Program"
+        "slug": "our-program/Livelihood-Enhancement-Program"
     },
     {
         "image": "/images/Socio-Economic-Development-Program.jpg",
-        "slug": "portfolio-details/Socio-Economic-Development-Program"
+        "slug": "our-program/Socio-Economic-Development-Program"
     },
     {
         "image": "/images/Education-Program.jpg",
-        "slug": "portfolio-details/Education-Program"
+        "slug": "our-program/Education-Program"
     },
     {
         "image": "/images/Sponsorship-Program.jpg",
-        "slug": "portfolio-details/Sponsorship-Program"
+        "slug": "our-program/Sponsorship-Program"
     },
     {
         "image": "/images/Initial-Capital-Support-for-Women-IGAs.jpg",
-        "slug": "portfolio-details/Initial-Capital-Support-for-Women-IGAs"
+        "slug": "our-program/Initial-Capital-Support-for-Women-IGAs"
     },
     {
-        "image": "/images/Material-Support-for-Vulnerable-Groups.jpg",
-        "slug": "portfolio-details/Material-Support-for-Vulnerable-Groups"
+        "image": "/images/MaterialSepport.JPG",
+        "slug": "our-program/Material-Support-for-Vulnerable-Groups"
     },
     {
         "image": "/images/Vocational-Training-Services.jpg",
-        "slug": "portfolio-details/Vocational-Training-Services"
+        "slug": "our-program/Vocational-Training-Services"
+    },
+    {
+        "image": "/images/PrisonAdministration.png",
+        "slug": "our-program/PrisonAdministration"
     },
     {
         "image": "/images/KCCBSSA-Girls-Football-Team-Support.jpg",
-        "slug": "portfolio-details/KCCBSSA-Girls-Football-Team-Support"
+        "slug": "our-program/KCCBSSA-Girls-Football-Team-Support"
     }
 ]

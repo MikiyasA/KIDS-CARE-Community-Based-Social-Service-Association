@@ -361,7 +361,7 @@ header#header.header-three {
 }
 
 #header .logo img {
-    max-height: 70px;
+    max-height: 90px;
     width: auto;
 }
 
@@ -1229,6 +1229,8 @@ button.lets-play {
     grid-column-gap: 102px;
     max-width: 1220px;
     margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .wc-sponser .sponser-img img {
@@ -3190,12 +3192,13 @@ body.transperent.main-error #header.header-scrolled {
 
 .wc-news .news-title h2 {
     font-size: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 .wc-news .news-title p {
     max-width: 70%;
     margin: auto;
+    text-align: justify;
 }
 
 .wc-news .news-wrapper .news-content img {
@@ -4424,7 +4427,7 @@ a.mobile-nav-toggle .svg-inline--fa.fa-xmark {
 
 .social-icon-three {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -7645,13 +7648,13 @@ a.mobile-nav-toggle .svg-inline--fa.fa-xmark {
         order: 2;
         display: flex;
         align-items: center;
-        justify-content: end;
+        justify-content: flex-end;
     }
 
     .outer-box {
         width: auto;
         display: none;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     .logo.no-caret-5 {
@@ -7663,7 +7666,7 @@ a.mobile-nav-toggle .svg-inline--fa.fa-xmark {
     }
 
     .wc-btn.outer-box .btn {
-        padding: 8px 20px 5px;
+        padding: 8px 15px 5px;
         font-size: 14px;
     }
 
@@ -10202,4 +10205,7 @@ a.mobile-nav-toggle .svg-inline--fa.fa-xmark {
     .about-us .about-image img {
         width: 100%;
     }
+}
+.ql-editor{
+    min-height: 300px;
 }

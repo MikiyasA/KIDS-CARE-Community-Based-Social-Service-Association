@@ -1,51 +1,8 @@
 [
     {
         "title": "Latest News",
-        "label": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus",
-        "detail": [
-            {
-                "slug": "/news-details",
-                "image": "/images/news-1.png",
-                "alt": "news-1",
-                "date": "10 jun,2022",
-                "label": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis"
-            },
-            {
-                "slug": "/news-details",
-                "image": "/images/news-2.png",
-                "alt": "news-2",
-                "date": "10 jun,2022",
-                "label": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis"
-            },
-            {
-                "slug": "/news-details",
-                "image": "/images/news-3.png",
-                "alt": "news-3",
-                "date": "10 jun,2022",
-                "label": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis"
-            },
-            {
-                "slug": "/news-details",
-                "image": "/images/news-4.png",
-                "alt": "news-4",
-                "date": "10 jun,2022",
-                "label": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis"
-            },
-            {
-                "slug": "/news-details",
-                "image": "/images/news-5.png",
-                "alt": "news-5",
-                "date": "10 jun,2022",
-                "label": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis"
-            },
-            {
-                "slug": "/news-details",
-                "image": "/images/news-6.png",
-                "alt": "news-6",
-                "date": "10 jun,2022",
-                "label": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis"
-            }
-        ],
+        "label": "Stay updated with the latest news from KCCBSSA, where we share impactful stories and recent developments in our ongoing efforts to support vulnerable communities across Ethiopia. From successful educational initiatives and sponsorship programs to emergency response efforts, our updates highlight the positive changes we are making in the lives of children, women, and families. Join us as we celebrate achievements, announce new projects, and engage with our community to foster a brighter future for all.",
+        "detail": [ ],
         "btn_slug": "/news",
         "btn_label": "Load More"
     }

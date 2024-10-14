@@ -19,7 +19,8 @@ export default function Hero({ initialValues }) {
           <section
             id="hero"
             className="hero-section wc-one-page-hero d-flex"
-            key={index}>
+            key={index}
+          >
             <div className="hero-main">
               <svg
                 width="204"
@@ -27,7 +28,8 @@ export default function Hero({ initialValues }) {
                 viewBox="0 0 204 417"
                 fill="none"
                 className="Hero_svg_"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   id="Extended_image wrap_1"
                   fillRule="evenodd"
@@ -130,13 +132,15 @@ export default function Hero({ initialValues }) {
                     <div
                       className="wc-btn"
                       data-aos="zoom-in"
-                      data-aos-duration="1500">
+                      data-aos-duration="1500"
+                    >
                       <Link
                         href={data.donat_btn_slug}
-                        className="btn btn-primary">
+                        className="btn btn-primary"
+                      >
                         {data.donat_btn_label}
                       </Link>
-                      <Link
+                      {/* <Link
                         href={data.watch_btn_slug}
                         target="_blank"
                         onClick={e => {
@@ -146,14 +150,15 @@ export default function Hero({ initialValues }) {
                         <button className="btn btn-outline-primary lets-play btn-watch-video">
                           {data.watch_btn_label}
                         </button>
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                   <div
                     className="wc-img"
                     data-aos="zoom-in"
-                    data-aos-duration="2000">
-                    <Link
+                    data-aos-duration="2000"
+                  >
+                    {/* <Link
                       href={data.watch_btn_slug}
                       target="_blank"
                       onClick={e => {
@@ -169,7 +174,7 @@ export default function Hero({ initialValues }) {
                           <i className="fa fa-play"></i>
                         </span>
                       </button>
-                    </Link>
+                    </Link> */}
                     <Image
                       src={data.image}
                       alt={data.alt}
@@ -187,23 +192,26 @@ export default function Hero({ initialValues }) {
             <div className={isOpen ? "active" : ""} id="video-wrap">
               <span
                 className="video-overlay"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   OpenPopUp();
-                }}></span>
+                }}
+              ></span>
               <div className="video-container">
                 <iframe
                   src="https://www.youtube.com/embed/kOISEM6L4xk?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=kOISEM6L4xk"
                   frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen=""></iframe>
+                  allowFullScreen=""
+                ></iframe>
               </div>
               <button
                 className="close-video"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   OpenPopUp();
-                }}></button>
+                }}
+              ></button>
             </div>
           ) : (
             ""

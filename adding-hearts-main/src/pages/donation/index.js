@@ -1,5 +1,6 @@
 import Footer from "@/Layout/Footer";
 import Header from "@/Layout/Header";
+import DonationSection from "@/component/Additional/Section/DonationSection";
 import { Donation } from "@/component/Section/Page-donation";
 import { Head_Meta, useFetchData } from "@/component/comman";
 import Contact from "@/component/comman/Contact-section/Contact";
@@ -25,7 +26,8 @@ export default function Donation_page() {
         comman_meta={data_seo_data}
       />
       {/* <Header initialValues={Header_Data} /> */}
-      <Donation initialValues={Donation_Data} />
+      {/* <Donation initialValues={Donation_Data} /> */}
+      <DonationSection />
       <Contact initialValues={Contact_Data} />
       <Footer initialValues={Footer_Data} />
     </>

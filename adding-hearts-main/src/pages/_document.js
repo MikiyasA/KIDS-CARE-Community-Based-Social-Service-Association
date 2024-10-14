@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
+import { ColorSchemeScript } from '@mantine/core';
 
 export default function MyDocument() {
   return (
@@ -7,6 +8,7 @@ export default function MyDocument() {
       lang="en"
       className="fontawesome-i2svg-active fontawesome-i2svg-complete">
       <Head>
+      <ColorSchemeScript defaultColorScheme="auto" />
         <script
           type="text/javascript"
           dangerouslySetInnerHTML={{

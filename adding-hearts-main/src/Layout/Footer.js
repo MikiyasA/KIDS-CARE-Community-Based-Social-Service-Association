@@ -19,8 +19,8 @@ export default function Footer({ initialValues }) {
                       width={190}
                       height={61}
                       priority={true}
-                      
-                    // loading="lazy"
+
+                      // loading="lazy"
                     />
                   </Link>
                   {/* <Link href={data.slug} className="logo">
@@ -56,9 +56,14 @@ export default function Footer({ initialValues }) {
                     {data.socialIcons &&
                       data.socialIcons.map((icon_data, index) => {
                         return (
-                          <Link key={index} href={icon_data.href}>
+                          <a
+                            key={index}
+                            href={icon_data.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <i className={`fab ${icon_data.iconClass}`}></i>
-                          </Link>
+                          </a>
                         );
                       })}
                   </div>
