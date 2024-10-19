@@ -1835,7 +1835,7 @@ button.lets-play {
 }
 
 .wc-contact .contact-title p {
-    max-width: 33%;
+    max-width: 90%;
     margin: auto;
 }
 
@@ -1881,8 +1881,8 @@ button.lets-play {
 }
 
 .contact-form .contact-form-button .btn {
-    font-size: 22px;
-    padding: 13px 77px 10px;
+    font-size: 12px;
+    padding: 10px 30px;
 }
 
 .contact-form .contact-form-button .btn.btn-primary:active,
@@ -7825,8 +7825,8 @@ a.mobile-nav-toggle .svg-inline--fa.fa-xmark {
     }
 
     .contact-form .contact-form-button .btn {
-        font-size: 16px;
-        padding: 13px 45px 10px;
+        font-size: 12px;
+        padding: 10px 30px;
     }
 
     .about-us h2.title {

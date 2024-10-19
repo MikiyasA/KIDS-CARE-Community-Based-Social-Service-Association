@@ -1,17 +1,19 @@
 import NewsForm from "@/component/Additional/Forms/NewsForm";
 import { PrimaryColor } from "@/styles/color";
-import { Group, Title } from "@mantine/core";
+import { Group, Text, Title } from "@mantine/core";
 import { modals } from "@mantine/modals";
-import { IconEdit } from "@tabler/icons-react";
+import { notifications } from "@mantine/notifications";
+import { IconEdit, IconTrash } from "@tabler/icons-react";
+import { useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 export default function Latest_News({ initialValues }) {
-  console.log({ initialValues });
-  // return (
-  //   initialValues.map((data, wc_news_index) => {
-  //   initialValues &&
+  const { data: session } = useSession();
+  const router = useRouter();
+
   return (
     <section className="wc-news-details">
       {initialValues.error && (
@@ -27,20 +29,82 @@ export default function Latest_News({ initialValues }) {
                 <h2 data-aos="fade-up" data-aos-duration="1500">
                   {initialValues.title}
                 </h2>
-                <IconEdit
-                  color={PrimaryColor}
-                  cursor="pointer"
-                  onClick={() => {
-                    modals.open({
-                      // centered: true,
-                      title: "Post News",
-                      size: "90%",
-                      children: (
-                        <NewsForm action="update" data={initialValues} />
-                      ),
-                    });
-                  }}
-                />
+                {session && (
+                  <Group>
+                    <IconEdit
+                      color={PrimaryColor}
+                      cursor="pointer"
+                      onClick={() => {
+                        modals.open({
+                          // centered: true,
+                          title: "Post News",
+                          size: "90%",
+                          children: (
+                            <NewsForm action="update" data={initialValues} />
+                          ),
+                        });
+                      }}
+                    />
+                    <IconTrash
+                      color="red"
+                      cursor="pointer"
+                      onClick={() => {
+                        modals.openConfirmModal({
+                          title: `Are you sure you want to delete this news?`,
+                          children: (
+                            <Text size="sm">
+                              Please confirm that you want to delete "
+                              {initialValues?.title}".
+                            </Text>
+                          ),
+                          labels: {
+                            confirm: "Delete",
+                            cancel: "Cancel",
+                          },
+                          onConfirm: async () => {
+                            try {
+                              const response = await fetch(
+                                `/api/news?id=${initialValues?.id}`,
+                                {
+                                  method: "DELETE",
+                                }
+                              );
+
+                              if (response.ok) {
+                                notifications.show({
+                                  color: "green",
+                                  title: "Success",
+                                  message:
+                                    response.message ||
+                                    "News deleted successfully.",
+                                });
+                                router.push("/news");
+                              } else {
+                                notifications.show({
+                                  color: "red",
+                                  title: "Failure",
+                                  message:
+                                    response.error ||
+                                    "Failed to delete the news. Please try again.",
+                                });
+                              }
+                            } catch (error) {
+                              // Handle network or other errors
+                              console.error("Error deleting news:", error);
+                              notifications.show({
+                                color: "red",
+                                title: "Failure",
+                                message:
+                                  "An error occurred while deleting the news.",
+                              });
+                            }
+                          },
+                          confirmProps: { color: "red" },
+                        });
+                      }}
+                    />
+                  </Group>
+                )}
               </Group>
               <p className="date" data-aos="fade-up" data-aos-duration="1500">
                 {new Date(

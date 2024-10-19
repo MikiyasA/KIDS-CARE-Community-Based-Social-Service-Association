@@ -1,8 +1,10 @@
+import { useFetchData } from "@/component/comman";
+import Contact from "@/component/comman/Contact-section/Contact";
 import Head from "next/head";
 import Link from "next/link";
 import React, { useState } from "react";
 
-export default function Contact({ initialValues }) {
+export default function ContactUs({ initialValues }) {
   const [passwordVisible, setPasswordVisible] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -11,7 +13,7 @@ export default function Contact({ initialValues }) {
 
   const [address_save_errors, setaddress_save_errors] = useState({});
 
-  const save_account_details = event => {
+  const save_account_details = (event) => {
     event.preventDefault();
     const formElement = document.querySelector("#account_details_form");
     const formData = new FormData(formElement);
@@ -66,6 +68,7 @@ export default function Contact({ initialValues }) {
     };
     // console.log(data)
   };
+  const { data: Contact_Data } = useFetchData("/json/data/contact.json");
 
   return (
     initialValues &&
@@ -76,7 +79,7 @@ export default function Contact({ initialValues }) {
             <div className="row">
               <div className="col-12 p-0">
                 <div className="wc-contact-wrapper">
-                  <div className="wc-contact-form">
+                  {/* <div className="wc-contact-form">
                     <h2 data-aos="fade-up" data-aos-duration="1500">
                       {data.title}
                     </h2>
@@ -162,7 +165,8 @@ export default function Contact({ initialValues }) {
                         </button>
                       </div>
                     </form>
-                  </div>
+                  </div> */}
+                  <Contact initialValues={Contact_Data} />
                   <div className="wc-address-form">
                     {data.address &&
                       data.address.map((address_data, index) => {
@@ -183,7 +187,8 @@ export default function Contact({ initialValues }) {
                             className="address"
                             data-aos="flip-up"
                             data-aos-duration="1500"
-                            key={index}>
+                            key={index}
+                          >
                             {p}
                           </div>
                         );
@@ -193,7 +198,8 @@ export default function Contact({ initialValues }) {
                 <div className="map-box">
                   <iframe
                     src={data.location_link}
-                    style={{ border: "0" }}></iframe>
+                    style={{ border: "0" }}
+                  ></iframe>
                 </div>
               </div>
             </div>

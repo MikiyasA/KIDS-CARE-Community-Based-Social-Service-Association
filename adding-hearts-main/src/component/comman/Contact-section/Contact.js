@@ -2,14 +2,18 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { notifications } from "@mantine/notifications";
+import { Button } from "@mantine/core";
 
 export default function Contact({ initialValues }) {
   // console.log(initialValues);
 
   const [address_save_errors, setaddress_save_errors] = useState({});
+  const [loading, setLoading] = useState();
 
   const save_account_details = async (event) => {
     event.preventDefault();
+    setLoading(true);
     const formElement = document.querySelector("#account_details_form");
     const formData = new FormData(formElement);
 
@@ -18,7 +22,7 @@ export default function Contact({ initialValues }) {
     let subject = formData.get("subject");
     let phone = formData.get("phone");
     let messages = formData.get("messages");
-console.log(fullName)
+    console.log(fullName);
     const error = {};
 
     if (!fullName || fullName.trim() === "") {
@@ -59,21 +63,34 @@ console.log(fullName)
       message: messages,
     };
     // console.log(data)
-    console.log(data)
-      const response = await fetch('/api/submit', {
-        method: 'POST',
+    setLoading(false);
+    if (!Object.keys(error).length > 0) {
+      const response = await fetch("/api/submit", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
-    
+
       const result = await response.json();
-      if (result.result === 'success') {
-        alert('Form submitted successfully!');
+      if (result.result === "success") {
+        formElement.reset();
+        notifications.show({
+          color: "green",
+          title: "Success",
+          message:
+            "Your details have been received successfully! 🌟 We'll reach out if we need anything further.",
+        });
       } else {
-        alert('There was an error submitting the form.');
+        notifications.show({
+          color: "red",
+          title: "Failure",
+          message:
+            "Oops! There was an error submitting the form. Please try again.",
+        });
       }
+    }
   };
 
   return (
@@ -98,7 +115,8 @@ console.log(fullName)
                     data-aos="fade-up"
                     data-aos-duration="1500"
                     id="account_details_form"
-                    onSubmit={save_account_details}>
+                    onSubmit={save_account_details}
+                  >
                     <div className="nema-and-number">
                       <div className="pb-4 w-100">
                         <input
@@ -131,7 +149,8 @@ console.log(fullName)
                     <div
                       className="email-and-submit"
                       data-aos="fade-up"
-                      data-aos-duration="1500">
+                      data-aos-duration="1500"
+                    >
                       <div className="pb-4 w-100">
                         <input
                           type="text"
@@ -163,7 +182,8 @@ console.log(fullName)
                     <div
                       className="wc-message"
                       data-aos="fade-up"
-                      data-aos-duration="1500">
+                      data-aos-duration="1500"
+                    >
                       <textarea
                         className="form-control d-flex"
                         placeholder="Message*"
@@ -180,10 +200,16 @@ console.log(fullName)
                     <div
                       className="contact-form-button"
                       data-aos="zoom-in"
-                      data-aos-duration="1500">
-                      <button type="submit" className="btn btn-primary">
-                        Send
-                      </button>
+                      data-aos-duration="1500"
+                    >
+                      <Button
+                        type="submit"
+                        className="btn btn-primary"
+                        loading={loading}
+                        color="#488f4d"
+                      >
+                        {loading ? "Sending..." : "Send"}
+                      </Button>
                     </div>
                   </form>
                 </div>

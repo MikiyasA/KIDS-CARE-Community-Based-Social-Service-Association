@@ -1,7 +1,7 @@
 [
     {
-        "title": "Our Program",
-        "label": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+        "title": "Our Programs",
+        "label": "",
         "detail": [
             {
                 "slug": "/our-program-details/Socio-Economic-Development-Program",
@@ -40,19 +40,19 @@
                 "alt": "Initial Capital Support for Women IGAs"
             },
             {
-                "slug": "/our-program-details",
+                "slug": "/our-program-details/Vocational-Training-Services",
                 "title": "Vocational Training Services",
                 "image": "/images/Vocational-Training-Services.jpg",
                 "alt": "Vocational Training Services"
             },
             {
-                "slug": "/our-program-details",
+                "slug": "/our-program-details/Prison-Services",
                 "title": "Prison Services",
                 "image": "/images/PrisonAdministration.png",
                 "alt": "image-7"
             },
             {
-                "slug": "/our-program-details",
+                "slug": "/our-program-details/Emergency-Response-Support",
                 "title": "Emergency Response Support",
                 "image": "/images/KalitiBuilding.png",
                 "alt": "image-7"

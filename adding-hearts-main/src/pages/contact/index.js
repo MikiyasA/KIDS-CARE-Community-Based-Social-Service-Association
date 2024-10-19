@@ -1,6 +1,7 @@
 import Footer from "@/Layout/Footer";
 import Header from "@/Layout/Header";
 import { Contact } from "@/component/Section/Page-Contact";
+import ContactUs from "@/component/Section/Page-Contact/Contact-section/Contact";
 import { Head_Meta, useFetchData } from "@/component/comman";
 
 export default function Contact_Pahe() {
@@ -22,7 +23,7 @@ export default function Contact_Pahe() {
         comman_meta={data_seo_data}
       />
       {/* <Header initialValues={Header_Data} /> */}
-      <Contact initialValues={Contact_Data} />
+      <ContactUs initialValues={Contact_Data} />
       <Footer initialValues={Footer_Data} />
     </>
   );

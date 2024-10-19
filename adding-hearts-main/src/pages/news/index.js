@@ -37,7 +37,7 @@ export default function Home() {
       console.error("Failed to fetch news:", error);
     }
   };
-  console.log({ Latest_News_Data });
+
   useEffect(() => {
     fetchNews();
   }, []);

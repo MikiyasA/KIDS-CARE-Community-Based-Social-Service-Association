@@ -1,9 +1,9 @@
 import NewsForm from "@/component/Additional/Forms/NewsForm";
 import { PrimaryColor } from "@/styles/color";
-import { Group } from "@mantine/core";
+import { Group, Text } from "@mantine/core";
 import { modals } from "@mantine/modals";
 import { notifications } from "@mantine/notifications";
-import { IconCirclePlus, IconEdit } from "@tabler/icons-react";
+import { IconCirclePlus, IconEdit, IconTrash } from "@tabler/icons-react";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -82,23 +82,83 @@ export default function Latest_News({ initialValues }) {
                             {detail_data.title}
                           </Link>
                           {session && (
-                            <IconEdit
-                              color={PrimaryColor}
-                              cursor="pointer"
-                              onClick={() => {
-                                modals.open({
-                                  // centered: true,
-                                  title: "Post News",
-                                  size: "90%",
-                                  children: (
-                                    <NewsForm
-                                      action="update"
-                                      data={detail_data}
-                                    />
-                                  ),
-                                });
-                              }}
-                            />
+                            <Group>
+                              <IconEdit
+                                color={PrimaryColor}
+                                cursor="pointer"
+                                onClick={() => {
+                                  modals.open({
+                                    // centered: true,
+                                    title: "Post News",
+                                    size: "90%",
+                                    children: (
+                                      <NewsForm
+                                        action="update"
+                                        data={detail_data}
+                                      />
+                                    ),
+                                  });
+                                }}
+                              />
+                              <IconTrash
+                                color="red"
+                                cursor="pointer"
+                                onClick={() => {
+                                  modals.openConfirmModal({
+                                    title: `Are you sure you want to delete this news?`,
+                                    children: (
+                                      <Text size="sm">
+                                        Please confirm that you want to delete "
+                                        {detail_data?.title}".
+                                      </Text>
+                                    ),
+                                    labels: {
+                                      confirm: "Delete",
+                                      cancel: "Cancel",
+                                    },
+                                    onConfirm: async () => {
+                                      try {
+                                        const response = await fetch(
+                                          `/api/news?id=${detail_data?.id}`,
+                                          {
+                                            method: "DELETE",
+                                          }
+                                        );
+
+                                        if (response.ok) {
+                                          notifications.show({
+                                            color: "green",
+                                            title: "Success",
+                                            message:
+                                              "News deleted successfully.",
+                                          });
+                                        } else {
+                                          notifications.show({
+                                            color: "red",
+                                            title: "Failure",
+                                            message:
+                                              "Failed to delete the news. Please try again.",
+                                          });
+                                        }
+                                      } catch (error) {
+                                        // Handle network or other errors
+                                        console.error(
+                                          "Error deleting news:",
+                                          error
+                                        );
+                                        notifications.show({
+                                          color: "red",
+                                          title: "Failure",
+                                          message:
+                                            "An error occurred while deleting the news.",
+                                        });
+                                      }
+                                    },
+                                    confirmProps: { color: "red" },
+                                  });
+                                }}
+                              />
+                            </Group>
                           )}
                         </Group>
                       </h2>

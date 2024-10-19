@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "fnm setup",
+      "type": "shell",
+      "command": "pwsh", // Use PowerShell Core
+      "args": [
+        "-Command",
+        "fnm env --use-on-cd | Out-String | Invoke-Expression"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

@@ -68,6 +68,9 @@ const NewsForm = ({ data, action }) => {
           title: "Success",
           message: responseDate.message || "News submitted successfully! 🌟",
         });
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000);
       } else {
         notifications.show({
           color: "red",
