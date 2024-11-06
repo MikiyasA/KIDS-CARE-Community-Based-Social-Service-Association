@@ -1,0 +1,24 @@
+[
+    {
+        "image": "/images/Free-Kindergarten-Services.png",
+        "alt": "Free-Kindergarten-Services",
+        "title": "Free-Kindergarten-Services",
+        "label": "",
+        "details": [
+            "The Association operates and gives kindergarten services for children from poor families’ age from 4 to 6 selected from the community by the concerned government authorities. These services are rendered in Addis Ababa, Akaki/Kality Sub City, in a specific place called Salo-gora and in Amhara National Regional State at Northern Showa Zone Debre Birhan Town."
+        ],
+        "images": [
+            {
+                "image": "/images/Free-Kindergarten-Services-1.jpeg",
+                "alt": "../"
+            },
+            {
+                "image": "/images/Free-Kindergarten-Services-2.jpeg",
+                "alt": "../"
+            }
+        ],
+        "two_detail": [
+            "The two Kindergarten centers are providing the services for16 and 20 years at Addis Ababa and Debre Birhan respectively.  The children have received a free schooling that includes school material, uniform, breakfast and a meal (lunch) once a day during all the service years."
+        ]
+    }
+]

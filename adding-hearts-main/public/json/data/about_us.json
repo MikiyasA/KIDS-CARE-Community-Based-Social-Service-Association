@@ -2,10 +2,45 @@
     {
         "label": "Empowering Futures, Transforming Lives",
         "linkHref": "/about-us",
-        "linkText": "About us",
+        "linkText": "About us sad",
         "paragraphs": [
-            "KCCBSSA, formerly known as Kids Care Children’s Welfare Association, has been dedicated to uplifting destitute children and mothers since its establishment in 2001. As a non-profit humanitarian organization, we strive to create a society where every child can experience holistic development—physically, mentally, and socially. Our mission focuses on alleviating poverty and addressing the multifaceted challenges faced by vulnerable families through community engagement and support.",
-            "Through various programs, including free kindergarten services, vocational training, and material support for families, KCCBSSA has positively impacted thousands of lives. Our commitment extends to empowering women through income-generating activities and providing essential services for children in challenging circumstances, such as those living with their mothers in prison. Together with our community partners, we aim to foster a brighter future for the next generation."
+            "Kids Care Community Based Social Service Association (KCCBSSA) (formerly known as kids care Children’s welfare Association) was founded in July of 2001 as an indigenous, non-government, non-profit making humanitarian voluntary  organization, to play its part in addressing some of the overwhelming problems of destitute children & mothers. The Association has been re-registered and accorded legal personality with Registry Number 0008 on July 17, 2019 G.C. as a Local Organizationin accordance with the Civil Society Organization  Proclamation No. 1113/2019.",
+            "KCCBSSA has a General Assembly as its highest deciding organ and the Executive Board providing leadership, defending the organizational mission and values supporting and supervising the organization’s Executive Director,providing  financial oversight and planning,overseeing and supporting strategic  planning,developing sustainable resources,managing or overseeing internal  controls and risk management,monitoring the organization’s activities and portfolio, promoting and enhancing the organization’s image. The General  Assembly has 11members (5 male and 6 Female) and 5 members (3 Male and 2 Female) as Executive Board members with different background and experiencewhich are relevant for Kids Care interventions."
+        ],
+        "paragraphs1": [
+            "Currently, KCCBSSA’s operation covers Addis Ababa City Administration and Debre Birhan in Amhara NationalRegional State. KCCBSSA has addressed with all its effort, the poor and destitute students, families and women at large in Oromia Regional State at Adama, Borena, Kemissie and in Amhara National Regional state in particular in North Shoa Zone it has provided services at the 5 (five) Menze Woredas till the end of 2016. It has been a member of Consortium of Christian Relief and Development  Associations (CCRDA) since December 2004."
+        ],
+        "missionVision": [
+            {
+                "title": "Vision", 
+                "detail":"KCCBSSA aspires to create a society in which proper physical, mental, spiritual,  moral and social development of children is realized."
+            },
+            {
+                "title": "Mission", 
+                "detail":"KCCBSSA works towards the attainment of a social order where the multifaceted  problems of children, women and destitute parents will be mitigated significantly."
+            },
+            {
+                "title": "Objective", 
+                "detail":"To contribute towards poverty alleviation by striving to bring about improvement  and lasting positive change in the lives of the disadvantaged children; destitute  parents, single mother’s and school children with the help and active involvement  of the community at large."
+            },
+            {
+                "title": "Program Focus", 
+                "bulleting": [
+                    "1️⃣. The program focuses on general poverty reduction as it relates to the disadvantaged children and their destitute families.",
+                    "2️⃣. It also focuses on development related undertakings to benefit these disadvantaged children in the form of providing preschool education."
+                ]
+            },
+            {
+                "title": "KCCBSSA’s Values and Principles", 
+                "bulleting": [
+                    "👉 Commitment",
+                    "👉 Transparency and Accountability",
+                    "👉 Integrity/trustworthiness",
+                    "👉 Empowerment",
+                    "👉 Teamwork",
+                    "👉 Respect"
+                ]
+            }
         ],
         "image":"/images/about.JPG",
         "alt":"image"

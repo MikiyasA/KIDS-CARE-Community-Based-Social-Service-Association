@@ -1,0 +1,23 @@
+[
+    {
+        "image": "/images/Emergency-Support.jpeg",
+        "alt": "Emergency-Support",
+        "title": "Emergency-Support",
+        "label": "",
+        "details": [
+            "Once a year, material support such as blankets, bed sheets etc. KCCBSSA distributes to Elders and Exercise books, school related materials to school going youth and children from poor parents."
+        ],
+        "images": [
+            {
+                "image": "/images/Emergency-Support-1.png",
+                "alt": "Emergency-Support"
+            },
+            {
+                "image": "/images/Emergency-Support-2.jpeg",
+                "alt": "Emergency-Support"
+            }
+        ],
+        "two_detail": [        ]
+        
+    }
+]

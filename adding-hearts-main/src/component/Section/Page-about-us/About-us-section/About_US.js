@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { Box, Text, Title } from "@mantine/core";
 
 export default function About_US({ initialValues }) {
   return (
@@ -32,11 +33,12 @@ export default function About_US({ initialValues }) {
                         key={index}
                         data-aos="fade-right"
                         data-aos-duration="1500"
+                        style={{ textAlign: "justify" }}
                       >
                         {paragraph_data}
                       </p>
                     ))}
-                  <div
+                  {/* <div
                     className="about-btn"
                     data-aos="fade-up"
                     data-aos-duration="1500"
@@ -44,9 +46,10 @@ export default function About_US({ initialValues }) {
                     <Link href={data.linkHref} className="btn btn-primary">
                       {data.linkText}
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
+
               <div className="col-lg-5 col-md-6">
                 <div className="about-image">
                   <Image
@@ -157,6 +160,31 @@ export default function About_US({ initialValues }) {
                     />
                   </svg>
                 </div>
+              </div>
+              <div data-aos="fade-right" data-aos-duration="1500">
+                {data.paragraphs1 &&
+                  data.paragraphs1.map((paragraph_data, index) => (
+                    <p key={index} style={{ textAlign: "justify" }}>
+                      {paragraph_data}
+                    </p>
+                  ))}
+              </div>
+              <div data-aos="fade-right" data-aos-duration="1500" my={30}>
+                {data.missionVision &&
+                  data.missionVision.map((mv_data, i) => (
+                    <Box key={i} my={20}>
+                      <Title order={4} mb={10}>
+                        {mv_data.title}
+                      </Title>
+                      <p style={{ textAlign: "justify" }}>{mv_data.detail}</p>
+                      {mv_data.bulleting &&
+                        mv_data.bulleting.map((bu_data, i) => (
+                          <p key={i} style={{ textAlign: "justify" }}>
+                            {bu_data}
+                          </p>
+                        ))}
+                    </Box>
+                  ))}
               </div>
             </div>
           </div>

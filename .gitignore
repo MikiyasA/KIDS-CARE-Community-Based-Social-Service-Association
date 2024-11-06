@@ -1,0 +1,5 @@
+migrations/
+server.js
+stderr.log
+tmp/
+.next.zip

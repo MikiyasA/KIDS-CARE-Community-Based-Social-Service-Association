@@ -26,6 +26,7 @@
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^5.3.2",
+    "dotenv": "^16.4.5",
     "formidable": "^3.5.1",
     "jsonwebtoken": "^9.0.2",
     "multer": "^1.4.5-lts.1",
@@ -39,6 +40,8 @@
     "react-quill": "^2.0.0",
     "reactstrap": "^9.2.2",
     "sass": "^1.69.7",
+    "sequelize": "^6.37.5",
+    "sequelize-cli": "^6.6.2",
     "swiper": "^11.0.5",
     "swiper-react": "^1.0.0"
   },

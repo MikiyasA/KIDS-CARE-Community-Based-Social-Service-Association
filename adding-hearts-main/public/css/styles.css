@@ -7604,7 +7604,7 @@ a.mobile-nav-toggle .svg-inline--fa.fa-xmark {
         background: #343434;
         z-index: 999;
         left: -100%;
-        width: 100%;
+        width: 70%;
         padding: 20px;
         overflow-y: auto;
         display: block;
@@ -7642,6 +7642,9 @@ a.mobile-nav-toggle .svg-inline--fa.fa-xmark {
         position: relative;
         z-index: 999;
         color: #fff;
+        background: #343434;
+        padding: 10px 16px;
+        border-radius: 10px;
     }
 
     .no-caret-2 {
@@ -7672,6 +7675,9 @@ a.mobile-nav-toggle .svg-inline--fa.fa-xmark {
 
     body.transperent header#header .mobile-nav-toggle {
         color: #dfffff;
+        /* background: #343434;
+        padding: 10px 16px;
+        border-radius: 10px; */
     }
 
     .wc-one-page-hero {

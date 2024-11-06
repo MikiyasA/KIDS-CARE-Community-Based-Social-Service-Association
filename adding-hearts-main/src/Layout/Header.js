@@ -232,13 +232,13 @@ export default function Header({ initialValues }) {
                         } else {
                           subMenu = (
                             <li key={index}>
-                              <Link
+                              <a
                                 className="nav-link scrollto"
                                 href={menu_data.slug}
                                 style={acitive_class_slug(menu_data.slug)}
                               >
                                 {menu_data.title}{" "}
-                              </Link>
+                              </a>
                               {subMenu}
                             </li>
                           );

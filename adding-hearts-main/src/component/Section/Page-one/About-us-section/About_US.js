@@ -35,7 +35,7 @@ export default function About_US({ initialValues }) {
                         {paragraph_data}
                       </p>
                     ))}
-                  <div
+                  {/* <div
                     className="about-btn"
                     data-aos="fade-up"
                     data-aos-duration="1500"
@@ -43,7 +43,7 @@ export default function About_US({ initialValues }) {
                     <Link href={data.linkHref} className="btn btn-primary">
                       {data.linkText}
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="col-lg-5 col-md-6">
@@ -55,7 +55,7 @@ export default function About_US({ initialValues }) {
                     height={482}
                   />
                 </div>
-                <div className="about-svg2">
+                {/* <div className="about-svg2">
                   <svg
                     width="379"
                     height="375"
@@ -155,7 +155,7 @@ export default function About_US({ initialValues }) {
                       strokeWidth="0.5"
                     />
                   </svg>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

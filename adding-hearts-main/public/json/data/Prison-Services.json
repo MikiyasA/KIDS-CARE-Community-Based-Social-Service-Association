@@ -1,14 +1,20 @@
 [
     {
-        "image": "/images/PrisonAdministration.png",
-        "alt": "Prison Services",
-        "title": "Prison Services",
+        "image": "/images/Prison-Services-1.jpeg",
+        "alt": "Prison-Services",
+        "title": "Prison-Services",
         "label": "",
         "details": [
-            "Children living with their mothers in prison face numerous challenges, including a lack of social support from extended family and friends, as well as isolation from their communities. To address the unique needs of these vulnerable children, KCCBSSA has assigned dedicated staff to provide essential services. This includes preparing nutritious meals for the children and offering preschool-like educational support to help them cope with their circumstances."
+            "Children with their mothers in prison, undoubtedly, are likely to face many challenges. To address some of the needs of these children KCCBSSA assigned one staff who cooks food for the children, “provide” Preprimary school like service and also comfort the children."
+        ],
+        "images": [
+            {
+                "image": "/images/Prison-Services-2.jpeg",
+                "alt": "Prison-Services"
+            }
         ],
         "two_detail": [
-            "By creating a nurturing environment, KCCBSSA aims to comfort and support these children, ensuring they receive the care and attention they need during a difficult time. Our commitment to their well-being is a crucial aspect of our broader mission to advocate for the rights and needs of all children, regardless of their circumstances."
+            "The monthly financial assistance is specifically aimed at helping families cover educational costs and basic living expenses, enabling children to continue their schooling without interruption. Currently, we support 150 students, a number that has unfortunately decreased from 600 due to funding constraints. Our sponsorship initiatives are primarily funded through generous contributions from various donors, with Pro Kind Switzerland being a significant partner. Through this program, we are committed to transforming the lives of vulnerable children and their families, fostering a brighter future for all."
         ]
     }
 ]

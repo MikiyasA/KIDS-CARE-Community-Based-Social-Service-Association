@@ -108,8 +108,9 @@ export default function Latest_News({ initialValues }) {
                                     title: `Are you sure you want to delete this news?`,
                                     children: (
                                       <Text size="sm">
-                                        Please confirm that you want to delete "
-                                        {detail_data?.title}".
+                                        Please confirm that you want to delete
+                                        &quot;
+                                        {detail_data?.title}&quot;.
                                       </Text>
                                     ),
                                     labels: {

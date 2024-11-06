@@ -4,59 +4,48 @@
         "label": "",
         "detail": [
             {
-                "slug": "/our-program-details/Socio-Economic-Development-Program",
-                "title": "Socio-Economic Development Program",
-                "image": "/images/Socio-Economic-Development-Program.jpg",
-                "alt": "Socio-Economic Development Program"
-            },
-            {
-                "slug": "/our-program-details/Livelihood-Enhancement-Program",
-                "title": "Livelihood Enhancement Program",
-                "image": "/images/Livelihood-Enhancement-Program.jpg",
-                "alt": "Livelihood-Enhancement-Program"
-            },
-            {
-                "slug": "/our-program-details/Education-Program",
-                "title": "Education Program",
-                "image": "/images/Education-Program.jpg",
-                "alt": "Education-Program"
-            },
-            {
-                "slug": "/our-program-details/Sponsorship-Program",
-                "title": "Sponsorship Program",
-                "image": "/images/Sponsorship-Program.jpg",
-                "alt": "Sponsorship-Program"
-            },
-            {
-                "slug": "/our-program-details/Material-Support-for-Vulnerable-Groups",
-                "title": "Material Support for Vulnerable Groups",
-                "image": "/images/MaterialSepport.JPG",
-                "alt": "Material Support for Vulnerable Groups"
+                "slug": "/our-program-details/Free-Kindergarten-Services",
+                "title": "Free Kindergarten Services",
+                "image": "/images/Free-Kindergarten-Services.png",
+                "alt": "Free Kindergarten Services"
             },
             {
                 "slug": "/our-program-details/Initial-Capital-Support-for-Women-IGAs",
                 "title": "Initial Capital Support for Women IGAs",
-                "image": "/images/Initial-Capital-Support-for-Women-IGAs.jpg",
+                "image": "/images/Initial-Capital-Support-for-Women-IGAs.png",
                 "alt": "Initial Capital Support for Women IGAs"
             },
             {
-                "slug": "/our-program-details/Vocational-Training-Services",
-                "title": "Vocational Training Services",
-                "image": "/images/Vocational-Training-Services.jpg",
-                "alt": "Vocational Training Services"
+                "slug": "/our-program-details/Sponsorship",
+                "title": "Sponsorship",
+                "image": "/images/Sponsorship.jpeg",
+                "alt": "Sponsorship"
+            },
+            {
+                "slug": "/our-program-details/Empowering-Women-and-Youth-for-Productive-and-Sustainable-Empowerment",
+                "title": "Empowering Women and Youth for Productive and Sustainable Empowerment - Debre Birhan",
+                "image": "/images/Empowering-Women-and-Youth-for-Productive-and-Sustainable-Empowerment.jpeg",
+                "alt": "Empowering Women and Youth for Productive and Sustainable Empowerment - Debre Birhan"
+            },
+            {
+                "slug": "/our-program-details/Emergency-Support",
+                "title": "Emergency Support",
+                "image": "/images/Emergency-Support.jpeg",
+                "alt": "Emergency-Support"
+            },
+            {
+                "slug": "/our-program-details/Sewing-and-Fashion-Design",
+                "title": "Sewing and Fashion Design (Addis Ababa)",
+                "image": "/images/Sewing-and-Fashion-Design.jpeg",
+                "alt": "Sewing and Fashion Design (Addis Ababa)"
             },
             {
                 "slug": "/our-program-details/Prison-Services",
                 "title": "Prison Services",
-                "image": "/images/PrisonAdministration.png",
-                "alt": "image-7"
+                "image": "/images/Prison-Services-1.jpeg",
+                "alt": "Prison-Services"
             },
-            {
-                "slug": "/our-program-details/Emergency-Response-Support",
-                "title": "Emergency Response Support",
-                "image": "/images/KalitiBuilding.png",
-                "alt": "image-7"
-            },
+           
             {
                 "slug": "/our-program-details/KCCBSSA-Girls-Football-Team-Support",
                 "title": "KCCBSSA Girls Football Team Support",

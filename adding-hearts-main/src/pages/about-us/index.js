@@ -42,7 +42,7 @@ export default function About_us() {
       {/* <Header initialValues={Header_Data} /> */}
       <Hero initialValues={Hero_Data} />
       <About_US initialValues={About_US_Data} />
-      <What_We initialValues={What_We_Data} />
+      {/* <What_We initialValues={What_We_Data} /> */}
       <Chariti_Page_Wrapper initialValues={Chariti_Page_Wrapper_Data} />
       {/* <Our_Latest_News initialValues={Our_Latest_News_Data} /> */}
       <Contact initialValues={Contact_Data} />

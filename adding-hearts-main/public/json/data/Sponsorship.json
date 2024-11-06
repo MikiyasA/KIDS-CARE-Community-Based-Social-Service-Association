@@ -1,0 +1,22 @@
+[
+    {
+        "image": "/images/Sponsorship.jpeg",
+        "alt": "Sponsorship",
+        "title": "Sponsorship",
+        "label": "",
+        "details": [
+            "This particular service is provided in two forms; once a year school material provision support and a monthly financial assistance for those who are referred from Women, Children and Social Affairs offices. KCCBSSA has provided assistance in the form of school materials and uniforms to over 10,000 school going children in the project areas it operates. The assistance comes from different donors and individuals but mainly from Pro kind Switzerland."
+        ],
+        "images": [
+            {
+                "image": "/images/Sponsorship-1.png",
+                "alt": "../"
+            },
+            {
+                "image": "/images/Sponsorship-2.jpeg",
+                "alt": "../"
+            }
+        ],
+        "two_detail": [        ]
+    }
+]

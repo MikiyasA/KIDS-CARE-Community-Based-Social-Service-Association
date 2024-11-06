@@ -1,14 +1,22 @@
 [
     {
-        "image": "/images/Initial-Capital-Support-for-Women-IGAs.jpg",
+        "image": "/images/Initial-Capital-Support-for-Women-IGAs.png",
         "alt": "Initial-Capital-Support-for-Women-IGAs",
         "title": "Initial Capital Support for Women IGAs",
         "label": "",
         "details": [
-            "Recognizing the critical role of income in enhancing livelihoods, KCCBSSA is committed to empowering vulnerable communities through our Initial Capital Support for Income Generating Activities (IGAs). This program provides essential seed money to destitute women referred by Women, Children, and Social Affairs offices in our operational areas. By facilitating access to financial resources, we enable these women to establish sustainable income streams that address their basic needs and improve their quality of life."
+            "Income generating activities can help vulnerable communities generate income to address their basic needs in a sustainable manner. Taking this into consideration KCCBSSA has been providing initial capital or seed money to destitute women who are referred from Women, Children and Social Affairs offices in our operational areas."
         ],
-        "two_detail": [
-            "Through our support, women can engage in various income-generating activities, fostering economic independence and resilience within their families and communities. This initiative not only helps to alleviate poverty but also promotes gender equality by empowering women to take charge of their financial futures. By investing in the potential of these women, KCCBSSA aims to create lasting positive change in the lives of individuals and the broader community."
-    ]
+        "images": [
+            {
+                "image": "/images/Initial-Capital-Support-for-Women-IGAs-1.jpeg",
+                "alt": "Initial-Capital-Support-for-Women-IGAs"
+            },
+            {
+                "image": "/images/Initial-Capital-Support-for-Women-IGAs-2.png",
+                "alt": "Initial-Capital-Support-for-Women-IGAs2"
+            }
+        ],
+        "two_detail": [    ]
     }
 ]

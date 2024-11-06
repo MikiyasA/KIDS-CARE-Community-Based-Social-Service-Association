@@ -1,42 +1,34 @@
 [
     {
-        "image": "/images/Socio-Economic-Development-Program.jpg",
-        "slug": "our-program/Socio-Economic-Development-Program"
+        "image": "/images/Free-Kindergarten-Services.png",
+        "slug": "our-program-details/Free-Kindergarten-Services"
     },
     {
-        "image": "/images/Livelihood-Enhancement-Program.jpg",
-        "slug": "our-program/Livelihood-Enhancement-Program"
+        "image": "/images/Initial-Capital-Support-for-Women-IGAs.png",
+        "slug": "our-program-details/Initial-Capital-Support-for-Women-IGAs"
     },
     {
-        "image": "/images/Socio-Economic-Development-Program.jpg",
-        "slug": "our-program/Socio-Economic-Development-Program"
+        "image": "/images/Sponsorship.jpeg",
+        "slug": "our-program-details/Sponsorship"
     },
     {
-        "image": "/images/Education-Program.jpg",
-        "slug": "our-program/Education-Program"
+        "image": "/images/Empowering-Women-and-Youth-for-Productive-and-Sustainable-Empowerment.jpeg",
+        "slug": "our-program-details/Empowering-Women-and-Youth-for-Productive-and-Sustainable-Empowerment"
     },
     {
-        "image": "/images/Sponsorship-Program.jpg",
-        "slug": "our-program/Sponsorship-Program"
+        "image": "/images/Emergency-Support.jpeg",
+        "slug": "our-program-details/Emergency-Support"
     },
     {
-        "image": "/images/Initial-Capital-Support-for-Women-IGAs.jpg",
-        "slug": "our-program/Initial-Capital-Support-for-Women-IGAs"
+        "image": "/images/Sewing-and-Fashion-Design.jpeg",
+        "slug": "our-program-details/Sewing-and-Fashion-Design"
     },
     {
-        "image": "/images/MaterialSepport.JPG",
-        "slug": "our-program/Material-Support-for-Vulnerable-Groups"
-    },
-    {
-        "image": "/images/Vocational-Training-Services.jpg",
-        "slug": "our-program/Vocational-Training-Services"
-    },
-    {
-        "image": "/images/PrisonAdministration.png",
-        "slug": "our-program/PrisonAdministration"
+        "image": "/images/Prison-Services-1.jpeg",
+        "slug": "our-program-details/Prison-Services"
     },
     {
         "image": "/images/KCCBSSA-Girls-Football-Team-Support.jpg",
-        "slug": "our-program/KCCBSSA-Girls-Football-Team-Support"
+        "slug": "our-program-details/KCCBSSA-Girls-Football-Team-Support"
     }
 ]
