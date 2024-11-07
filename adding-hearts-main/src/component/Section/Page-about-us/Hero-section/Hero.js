@@ -4,8 +4,6 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 export default function Hero({ initialValues }) {
-  // console.log(initialValues);
-
   return (
     initialValues &&
     initialValues.map((data, index) => {
@@ -20,7 +18,11 @@ export default function Hero({ initialValues }) {
                     backgroundImage: `url(${data.image})`,
                   }}
                 >
-                  <h2 dta-aosa="fade-up" data-aos-duration="1500"  style={{ color: "#ffffff"}}>
+                  <h2
+                    dta-aosa="fade-up"
+                    data-aos-duration="1500"
+                    style={{ color: "#ffffff" }}
+                  >
                     {data.title}
                   </h2>
                 </div>

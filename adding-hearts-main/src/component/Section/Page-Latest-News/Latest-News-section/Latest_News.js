@@ -31,7 +31,7 @@ export default function Latest_News({ initialValues }) {
                       modals.open({
                         // centered: true,
                         title: "Post News",
-                        size: "90%",
+                        size: "100%",
                         children: <NewsForm action="add" />,
                       });
                     }}
@@ -167,11 +167,11 @@ export default function Latest_News({ initialValues }) {
                   );
                 })}
             </div>
-            <div className="wc-btn" data-aos="fade-up" data-aos-duration="1500">
+            {/* <div className="wc-btn" data-aos="fade-up" data-aos-duration="1500">
               <Link href="" className="btn btn-primary">
                 Load More
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

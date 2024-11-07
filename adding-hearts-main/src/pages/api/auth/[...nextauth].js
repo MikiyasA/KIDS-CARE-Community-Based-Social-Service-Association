@@ -1,9 +1,7 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
-
-const prisma = new PrismaClient();
+import User from "../../../../models/User";
 
 export default NextAuth({
   providers: [
@@ -15,16 +13,22 @@ export default NextAuth({
       },
       async authorize(credentials) {
         // Find the user by email in the database
-        const user = await prisma.user.findUnique({
+        const user = await User.findOne({
           where: { email: credentials.email },
         });
 
-        // If no user is found or passwords don't match, return null
-        if (
-          !user ||
-          !(await bcrypt.compare(credentials.password, user.password))
-        ) {
-          return null;
+        if (!user) {
+          throw new Error("User is not recognized");
+        }
+        const isPasswordCorrect = await bcrypt.compare(
+          credentials.password,
+          user.password
+        );
+        if (!isPasswordCorrect) {
+          throw new Error("Incorrect password");
+        }
+        if (user.status !== "active") {
+          throw new Error("User is not active");
         }
 
         // If authentication is successful, return the user object
@@ -68,7 +72,8 @@ export default NextAuth({
     },
   },
 
-  //   pages: {
-  //     signIn: '/auth/signin',
-  //   },
+  // Uncomment and adjust the following line if you have a custom sign-in page
+  // pages: {
+  //   signIn: '/auth/signin',
+  // },
 });

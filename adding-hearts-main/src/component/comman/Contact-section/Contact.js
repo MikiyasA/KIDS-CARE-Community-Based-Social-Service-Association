@@ -6,8 +6,6 @@ import { notifications } from "@mantine/notifications";
 import { Button } from "@mantine/core";
 
 export default function Contact({ initialValues }) {
-  // console.log(initialValues);
-
   const [address_save_errors, setaddress_save_errors] = useState({});
   const [loading, setLoading] = useState();
 
@@ -22,7 +20,6 @@ export default function Contact({ initialValues }) {
     let subject = formData.get("subject");
     let phone = formData.get("phone");
     let messages = formData.get("messages");
-    console.log(fullName);
     const error = {};
 
     if (!fullName || fullName.trim() === "") {
@@ -62,7 +59,6 @@ export default function Contact({ initialValues }) {
       subject: subject,
       message: messages,
     };
-    // console.log(data)
     setLoading(false);
     if (!Object.keys(error).length > 0) {
       const response = await fetch("/api/submit", {

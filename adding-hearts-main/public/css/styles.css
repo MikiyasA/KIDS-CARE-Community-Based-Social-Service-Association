@@ -10215,3 +10215,10 @@ a.mobile-nav-toggle .svg-inline--fa.fa-xmark {
 .ql-editor{
     min-height: 300px;
 }
+.ql-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+    background-color: #fff; /* Optional: makes sure the toolbar has a background when it sticks */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow when the toolbar is sticky */
+}

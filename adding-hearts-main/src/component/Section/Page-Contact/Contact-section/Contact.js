@@ -66,7 +66,6 @@ export default function ContactUs({ initialValues }) {
       number: number,
       password: password,
     };
-    // console.log(data)
   };
   const { data: Contact_Data } = useFetchData("/json/data/contact.json");
 

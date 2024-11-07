@@ -122,6 +122,7 @@ const NewsForm = ({ data, action }) => {
             color={PrimaryColor}
             loading={loading}
             disabled={!form.isValid()}
+            style={{position:"sticky", bottom: 5}}
           >
             {" "}
             Submit

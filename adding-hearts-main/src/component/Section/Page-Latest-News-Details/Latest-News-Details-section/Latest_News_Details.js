@@ -38,7 +38,7 @@ export default function Latest_News({ initialValues }) {
                         modals.open({
                           // centered: true,
                           title: "Post News",
-                          size: "90%",
+                          size: "100%",
                           children: (
                             <NewsForm action="update" data={initialValues} />
                           ),

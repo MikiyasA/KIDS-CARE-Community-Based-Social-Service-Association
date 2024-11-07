@@ -3,8 +3,6 @@ import Link from "next/link";
 import React from "react";
 
 export default function Chariti_Page_Wrapper({ initialValues }) {
-  // console.log(initialValues);
-
   return (
     <div className="wc-chariti">
       <div className="container-fluid !p-0">

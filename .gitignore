@@ -3,3 +3,5 @@ server.js
 stderr.log
 tmp/
 .next.zip
+.env
+/adding-hearts-main/public/uploads

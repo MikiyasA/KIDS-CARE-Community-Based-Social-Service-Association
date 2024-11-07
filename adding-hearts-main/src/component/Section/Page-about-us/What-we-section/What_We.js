@@ -2,8 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 export default function What_We({ initialValues }) {
-  // console.log(initialValues);
-
   return (
     initialValues &&
     initialValues.map((data, index) => {

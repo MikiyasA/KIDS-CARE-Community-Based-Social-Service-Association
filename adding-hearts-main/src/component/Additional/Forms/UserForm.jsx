@@ -18,7 +18,6 @@ import { notifications } from "@mantine/notifications";
 
 const UserForm = ({ data, action }) => {
   const [loading, setLoading] = useState(false);
-  console.log({ data });
   const form = useForm({
     validateInputOnBlur: true,
     initialValues: {

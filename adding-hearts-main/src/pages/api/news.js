@@ -1,11 +1,8 @@
 import multer from "multer";
-import { PrismaClient } from "@prisma/client";
 import path from "path";
 import fs from "fs";
 import { getSession } from "next-auth/react";
-import { error } from "console";
-
-const prisma = new PrismaClient();
+import News from "../../../models/News";
 
 const uploadDir = path.join(process.cwd(), "public/uploads");
 
@@ -20,14 +17,13 @@ const storage = multer.diskStorage({
     cb(null, uploadDir);
   },
   filename: (req, file, cb) => {
-    // Generate a timestamp for the file name
     const timestamp = new Date()
       .toISOString()
       .replace(/[-:.]/g, "")
-      .slice(0, 14); // Format: YYYYMMDDHHMMSS
-    const extension = path.extname(file.originalname); // Get the file extension
-    const originalFileName = path.basename(file.originalname, extension); // Get original file name without extension
-    const newFileName = `${originalFileName}-${timestamp}${extension}`; // New file name with timestamp
+      .slice(0, 14);
+    const extension = path.extname(file.originalname);
+    const originalFileName = path.basename(file.originalname, extension);
+    const newFileName = `${originalFileName}-${timestamp}${extension}`;
     cb(null, newFileName);
   },
 });
@@ -54,42 +50,61 @@ export default async function handler(req, res) {
       }
 
       const { title, detail, createdBy } = req.body;
-      const coverUrl = `/uploads/${req.file.filename}`; // Save the new file name in the URL
+      const coverUrl = `/uploads/${req.file.filename}`;
+      let updatedDetail = detail.replace(
+        /<img src="data:image\/(png|jpeg|jpg);base64,([^"]+)"/g,
+        (match, format, base64Data) => {
+          const filename = `${Date.now()}.${format}`;
+          const filepath = path.join(
+            process.cwd(),
+            "public",
+            "uploads",
+            filename
+          );
 
-      const news = await prisma.news.create({
-        data: {
+          // Convert base64 data to binary and save as image file
+          const buffer = Buffer.from(base64Data, "base64");
+          fs.writeFileSync(filepath, buffer);
+
+          // Generate the URL for the saved image
+          const imageUrl = `/uploads/${filename}`;
+          return `<img src="${imageUrl}"`; // Replace base64 with file URL in HTML
+        }
+      );
+
+      try {
+        const news = await News.create({
           title,
           cover: coverUrl,
-          detail,
-          createdBy: session.user.id || "guest", // Default to "guest" if not provided
-        },
-      });
-
-      return res.status(201).json(news);
+          detail: updatedDetail,
+          createdBy: session.user.id || "guest",
+        });
+        return res.status(201).json(news);
+      } catch (error) {
+        return res.status(500).json({ error: "Error creating news item" });
+      }
     });
   } else if (req.method === "GET") {
-    const { id } = req.query; // Get the id from query parameters
+    const { id } = req.query;
 
-    if (id) {
-      // If an id is provided, get the specific news item
-      const newsItem = await prisma.news.findUnique({
-        where: { id: id },
-      });
-
-      if (!newsItem) {
-        return res.status(404).json({ error: "News item not found." });
+    try {
+      if (id) {
+        const newsItem = await News.findByPk(id);
+        if (!newsItem) {
+          return res.status(404).json({ error: "News item not found." });
+        }
+        return res.json(newsItem);
+      } else {
+        const news = await News.findAll({
+          order: [
+            ["updatedAt", "DESC"],
+            ["createdAt", "DESC"],
+          ],
+        });
+        return res.json(news);
       }
-
-      return res.json(newsItem);
-    } else {
-      // Otherwise, get all news items
-      const news = await prisma.news.findMany({
-        orderBy: [
-          { updatedAt: "desc" }, // First, sort by updatedAt in descending order
-          { createdAt: "desc" }, // Then, sort by createdAt in descending order if updatedAt is not available
-        ],
-      });
-      return res.json(news);
+    } catch (error) {
+      return res.status(500).json({ error: "Error fetching news items" });
     }
   } else if (req.method === "PUT") {
     if (!session) {
@@ -101,24 +116,43 @@ export default async function handler(req, res) {
       }
 
       const { id, title, detail } = req.body;
-      const coverUrl = req.file ? `/uploads/${req.file.filename}` : undefined; // Use new file name if uploaded
+      const coverUrl = req.file ? `/uploads/${req.file.filename}` : undefined;
+      let updatedDetail = detail.replace(
+        /<img src="data:image\/(png|jpeg|jpg);base64,([^"]+)"/g,
+        (match, format, base64Data) => {
+          const filename = `${Date.now()}.${format}`;
+          const filepath = path.join(
+            process.cwd(),
+            "public",
+            "uploads",
+            filename
+          );
 
+          // Convert base64 data to binary and save as image file
+          const buffer = Buffer.from(base64Data, "base64");
+          fs.writeFileSync(filepath, buffer);
+
+          // Generate the URL for the saved image
+          const imageUrl = `/uploads/${filename}`;
+          return `<img src="${imageUrl}"`; // Replace base64 with file URL in HTML
+        }
+      );
       const updateData = {
         title,
-        detail,
-        updatedBy: session.user.id || "guest", // Default to "guest"
+        detail: updatedDetail,
+        updatedBy: session.user.id || "guest",
       };
 
       if (coverUrl) {
         updateData.cover = coverUrl;
       }
 
-      const news = await prisma.news.update({
-        where: { id: id },
-        data: updateData,
-      });
-
-      return res.status(200).json(news);
+      try {
+        const news = await News.update(updateData, { where: { id } });
+        return res.status(200).json(news);
+      } catch (error) {
+        return res.status(500).json({ error: "Error updating news item" });
+      }
     });
   } else if (req.method === "DELETE") {
     if (!session) {
@@ -126,16 +160,17 @@ export default async function handler(req, res) {
     }
     const { id } = req.query;
 
-    // Ensure that the news item exists before deleting
-    const existingNews = await prisma.news.findUnique({
-      where: { id: id },
-    });
-    if (!existingNews) {
-      return res.status(404).json({ error: "News item not found." });
-    }
+    try {
+      const existingNews = await News.findByPk(id);
+      if (!existingNews) {
+        return res.status(404).json({ error: "News item not found." });
+      }
 
-    await prisma.news.delete({ where: { id: id } });
-    return res.status(204).end(); // No content
+      await News.destroy({ where: { id } });
+      return res.status(204).end();
+    } catch (error) {
+      return res.status(500).json({ error: "Error deleting news item" });
+    }
   } else {
     res.setHeader("Allow", ["POST", "GET", "PUT", "DELETE"]);
     return res.status(405).end(`Method ${req.method} Not Allowed`);

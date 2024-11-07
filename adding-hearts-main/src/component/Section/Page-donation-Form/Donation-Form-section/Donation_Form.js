@@ -15,10 +15,10 @@ export default function Donation_Success({ initialValues }) {
   const [paymentId, setpaymentId] = useState(null);
 
   const toggleDropdown = () => {
-    setDropdownOpen(prevState => !prevState);
+    setDropdownOpen((prevState) => !prevState);
   };
 
-  const handleAmountSelection = amount => {
+  const handleAmountSelection = (amount) => {
     localStorage.setItem("amount", amount);
     setSelectedAmount(amount);
     // Add any other logic you need when an amount is selected
@@ -27,7 +27,7 @@ export default function Donation_Success({ initialValues }) {
 
   const [address_save_errors, setaddress_save_errors] = useState({});
 
-  const save_account_details = event => {
+  const save_account_details = (event) => {
     event.preventDefault();
     const formElement = document.querySelector("#account_details_form");
     const formData = new FormData(formElement);
@@ -103,8 +103,6 @@ export default function Donation_Success({ initialValues }) {
         interest_position: position_of_interest,
       };
 
-      console.log(data);
-
       setSuccess("Your Donate Success");
     }
   };
@@ -127,7 +125,8 @@ export default function Donation_Success({ initialValues }) {
                   <h2>{data.title}</h2>
                   <form
                     id="account_details_form"
-                    onSubmit={save_account_details}>
+                    onSubmit={save_account_details}
+                  >
                     <div className="inner-input">
                       <label>Donate to</label>
                       <div className=" mb-4">
@@ -148,7 +147,8 @@ export default function Donation_Success({ initialValues }) {
                     <Dropdown
                       isOpen={dropdownOpen}
                       toggle={toggleDropdown}
-                      className="mb-4">
+                      className="mb-4"
+                    >
                       <DropdownToggle caret name="amount">
                         {selectedAmount ? `$ ${selectedAmount}` : "Pick amount"}
                       </DropdownToggle>
@@ -160,11 +160,13 @@ export default function Donation_Success({ initialValues }) {
                           $ 50
                         </DropdownItem>
                         <DropdownItem
-                          onClick={() => handleAmountSelection(100)}>
+                          onClick={() => handleAmountSelection(100)}
+                        >
                           $ 100
                         </DropdownItem>
                         <DropdownItem
-                          onClick={() => handleAmountSelection(1000)}>
+                          onClick={() => handleAmountSelection(1000)}
+                        >
                           $ 1000
                         </DropdownItem>
                       </DropdownMenu>

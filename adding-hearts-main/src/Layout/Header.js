@@ -7,7 +7,6 @@ import { Group } from "@mantine/core";
 import UserAction from "@/component/Additional/Section/UserAction";
 
 export default function Header({ initialValues }) {
-  // console.log(initialValues);
   const [isScrolled, setIsScrolled] = useState(false);
   const [OpenMenu, setOpenMenu] = useState(false);
 

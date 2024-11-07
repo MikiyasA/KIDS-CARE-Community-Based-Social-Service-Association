@@ -1,5 +1,5 @@
 {
-  "name": "adding_hearts",
+  "name": "KCCBSSA",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,7 +19,6 @@
     "@mantine/hooks": "^7.13.2",
     "@mantine/modals": "^7.13.2",
     "@mantine/notifications": "^7.13.2",
-    "@prisma/client": "^5.20.0",
     "@tabler/icons-react": "^3.19.0",
     "aos": "^2.3.4",
     "axios": "^1.6.5",
@@ -53,7 +52,6 @@
     "@types/multer": "^1.4.12",
     "@types/react": "^18.3.11",
     "eslint": "^8",
-    "eslint-config-next": "14.0.4",
-    "prisma": "^5.20.0"
+    "eslint-config-next": "14.0.4"
   }
 }

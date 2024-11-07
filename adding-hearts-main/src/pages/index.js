@@ -1,7 +1,6 @@
 import Footer from "@/Layout/Footer";
 import Header from "@/Layout/Header";
 import {
-  About_US,
   Chariti_Page_Wrapper,
   Hero,
   Help_Me,
@@ -11,6 +10,8 @@ import {
   Timeline,
 } from "@/component/Section/Page-one";
 import { Head_Meta, useFetchData } from "@/component/comman";
+import { About_US } from "@/component/Section/Page-about-us";
+
 import Contact from "@/component/comman/Contact-section/Contact";
 
 export default function Home() {

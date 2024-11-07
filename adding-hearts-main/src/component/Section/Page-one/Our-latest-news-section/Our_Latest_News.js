@@ -6,8 +6,6 @@ import "swiper/css";
 // import "swiper/css/navigation";
 
 export default function Our_Latest_News({ initialValues }) {
-  // console.log(initialValues);
-
   return initialValues && initialValues[0] ? (
     <div className="our-latest-news-section our-latest-news-section-container">
       <div className="container">

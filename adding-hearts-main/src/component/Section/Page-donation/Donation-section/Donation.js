@@ -8,7 +8,7 @@ export default function Donation({ initialValues }) {
 
   const [address_save_errors, setaddress_save_errors] = useState({});
 
-  const save_account_details = event => {
+  const save_account_details = (event) => {
     event.preventDefault();
     const formElement = document.querySelector("#donation_form");
     const formData = new FormData(formElement);
@@ -55,7 +55,6 @@ export default function Donation({ initialValues }) {
         amount: amount,
         position: position,
       };
-      console.log(data);
       setSuccess("Your Donate Success");
     }
   };
@@ -77,7 +76,8 @@ export default function Donation({ initialValues }) {
                 <form
                   className="donation-inner-box"
                   onSubmit={save_account_details}
-                  id="donation_form">
+                  id="donation_form"
+                >
                   <h2 data-aos="fade-up" data-aos-duration="1500">
                     {data.title}
                   </h2>
@@ -100,7 +100,7 @@ export default function Donation({ initialValues }) {
                             type="number"
                             className="form-control"
                             name="amount"
-                            onChange={e => {
+                            onChange={(e) => {
                               setAmount(e.target.value);
                             }}
                             placeholder="Amount*"
@@ -209,7 +209,8 @@ export default function Donation({ initialValues }) {
                             <p
                               data-aos="fade-up"
                               data-aos-duration="1500"
-                              key={index}>
+                              key={index}
+                            >
                               {detail_data}
                             </p>
                           );
@@ -235,7 +236,8 @@ export default function Donation({ initialValues }) {
                         <p
                           data-aos="fade-up"
                           data-aos-duration="1500"
-                          key={index}>
+                          key={index}
+                        >
                           {short_label_data}
                         </p>
                       );

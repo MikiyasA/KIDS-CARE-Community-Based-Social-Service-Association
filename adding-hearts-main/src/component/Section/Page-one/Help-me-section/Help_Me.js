@@ -3,8 +3,6 @@ import Link from "next/link";
 import React from "react";
 
 export default function Help_Me({ initialValues }) {
-  // console.log(initialValues);
-
   return (
     initialValues &&
     initialValues.map((data, index) => {
@@ -42,17 +40,23 @@ export default function Help_Me({ initialValues }) {
                         data-aos="zoom-in-right"
                         data-aos-duration="1500"
                       >
-                        <Image src={detail_data.image} alt={detail_data.alt} width={710} height={563}/>
+                        <Image
+                          src={detail_data.image}
+                          alt={detail_data.alt}
+                          width={710}
+                          height={563}
+                        />
                         <div className={`wc-story ${story2}`}>
                           {" "}
                           {/* story-2 */}
-                          <p>
-                            {detail_data.name}
-                          </p>
+                          <p>{detail_data.name}</p>
                         </div>
                       </div>
                     </div>
-                    <div className={`col-lg-6 p-0 ${order1}`} style={{ alignContent: 'center' }}>
+                    <div
+                      className={`col-lg-6 p-0 ${order1}`}
+                      style={{ alignContent: "center" }}
+                    >
                       {/* order-1 */}
                       <div className="wc-help-content">
                         {detail_data.paragraphs &&
