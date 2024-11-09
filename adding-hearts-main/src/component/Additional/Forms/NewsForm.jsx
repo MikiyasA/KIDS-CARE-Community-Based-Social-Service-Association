@@ -70,7 +70,7 @@ const NewsForm = ({ data, action }) => {
         });
         setTimeout(() => {
           window.location.reload();
-        }, 2000);
+        }, 500);
       } else {
         notifications.show({
           color: "red",
@@ -103,8 +103,8 @@ const NewsForm = ({ data, action }) => {
             label="Cover Photo"
             placeholder="Add Cover Photo"
             description={`Uploaded file: ${
-              form.values.cover && action == "update"
-                ? form.values.cover.split("\\").pop().split("/").pop()
+              form.values.cover && action === "update" && typeof form.values.cover === "string"
+                ? form.values.cover?.split("\\").pop().split("/").pop()
                 : ""
             }`}
             required

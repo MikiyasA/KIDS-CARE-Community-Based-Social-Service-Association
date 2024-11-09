@@ -41,6 +41,7 @@
     "sass": "^1.69.7",
     "sequelize": "^6.37.5",
     "sequelize-cli": "^6.6.2",
+    "sharp": "^0.33.5",
     "swiper": "^11.0.5",
     "swiper-react": "^1.0.0"
   },

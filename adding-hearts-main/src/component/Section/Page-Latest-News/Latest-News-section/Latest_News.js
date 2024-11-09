@@ -134,6 +134,9 @@ export default function Latest_News({ initialValues }) {
                                             message:
                                               "News deleted successfully.",
                                           });
+                                          setTimeout(() => {
+                                            window.location.reload();
+                                          }, 500);
                                         } else {
                                           notifications.show({
                                             color: "red",
