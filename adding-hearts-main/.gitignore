@@ -3,7 +3,7 @@
 server.js
 stderr.log
 tmp/
-
+/.env/
 # dependencies
 /node_modules
 /.pnp

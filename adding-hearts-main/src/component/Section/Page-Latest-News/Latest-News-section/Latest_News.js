@@ -11,6 +11,7 @@ import React, { useState } from "react";
 
 export default function Latest_News({ initialValues }) {
   const { data: session } = useSession();
+  // const nextUrl = process.env.NEXTAUTH_URL;
 
   return (
     <section className="wc-news">
@@ -62,7 +63,7 @@ export default function Latest_News({ initialValues }) {
                     >
                       <Link href={detail_data.slug}>
                         <Image
-                          src={detail_data.cover}
+                          src={`${process.env.NEXT_PUBLIC_NEXTAUTH_URL}${detail_data.cover}`}
                           alt={detail_data.title}
                           width={472}
                           height={300}

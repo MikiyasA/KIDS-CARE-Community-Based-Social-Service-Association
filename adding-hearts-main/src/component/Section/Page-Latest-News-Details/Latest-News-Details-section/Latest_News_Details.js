@@ -121,7 +121,7 @@ export default function Latest_News({ initialValues }) {
                   style={{ width: "100%", maxWidth: "173px" }}
                 >
                   <Image
-                    src={initialValues.cover}
+                    src={`${process.env.NEXT_PUBLIC_NEXTAUTH_URL}${initialValues.cover}`}
                     alt={initialValues.title}
                     data-aos="flip-right"
                     data-aos-duration="1500"
