@@ -1,59 +1,71 @@
 [
-    {
-        "title": "Our Programs",
-        "label": "",
-        "detail": [
-            {
-                "slug": "/our-program-details/Free-Kindergarten-Services",
-                "title": "Free Kindergarten Services",
-                "image": "/images/Free-Kindergarten-Services.png",
-                "alt": "Free Kindergarten Services"
-            },
-            {
-                "slug": "/our-program-details/Initial-Capital-Support-for-Women-IGAs",
-                "title": "Initial Capital Support for Women IGAs",
-                "image": "/images/Initial-Capital-Support-for-Women-IGAs.png",
-                "alt": "Initial Capital Support for Women IGAs"
-            },
-            {
-                "slug": "/our-program-details/Sponsorship",
-                "title": "Sponsorship",
-                "image": "/images/Sponsorship.jpeg",
-                "alt": "Sponsorship"
-            },
-            {
-                "slug": "/our-program-details/Empowering-Women-and-Youth-for-Productive-and-Sustainable-Empowerment",
-                "title": "Empowering Women and Youth for Productive and Sustainable Empowerment - Debre Birhan",
-                "image": "/images/Empowering-Women-and-Youth-for-Productive-and-Sustainable-Empowerment.jpeg",
-                "alt": "Empowering Women and Youth for Productive and Sustainable Empowerment - Debre Birhan"
-            },
-            {
-                "slug": "/our-program-details/Emergency-Support",
-                "title": "Emergency Support",
-                "image": "/images/Emergency-Support.jpeg",
-                "alt": "Emergency-Support"
-            },
-            {
-                "slug": "/our-program-details/Sewing-and-Fashion-Design",
-                "title": "Sewing and Fashion Design (Addis Ababa)",
-                "image": "/images/Sewing-and-Fashion-Design.jpeg",
-                "alt": "Sewing and Fashion Design (Addis Ababa)"
-            },
-            {
-                "slug": "/our-program-details/Prison-Services",
-                "title": "Prison Services",
-                "image": "/images/Prison-Services-1.jpeg",
-                "alt": "Prison-Services"
-            },
-           
-            {
-                "slug": "/our-program-details/KCCBSSA-Girls-Football-Team-Support",
-                "title": "KCCBSSA Girls Football Team Support",
-                "image": "/images/KCCBSSA-Girls-Football-Team-Support.jpg",
-                "alt": "KCCBSSA Girls Football Team Support"
-            }
-        ],
-        "btn_slug": "/portfolio",
-        "btn_label": "Load More"
-    }
+  {
+    "title": "Our Programs",
+    "label": "",
+    "detail": [
+      {
+        "slug": "/our-program-details/Day-Cares",
+        "title": "Day Cares",
+        "image": "/images/Day-Cares.jpg",
+        "alt": "Day Cares"
+      },
+      {
+        "slug": "/our-program-details/Vocational-Training",
+        "title": "Vocational Training",
+        "image": "/images/Vocational-Training.jpg",
+        "alt": "Vocational Training"
+      },
+      {
+        "slug": "/our-program-details/Free-Kindergarten-Services",
+        "title": "Free Kindergarten Services",
+        "image": "/images/Free-Kindergarten-Services.png",
+        "alt": "Free Kindergarten Services"
+      },
+      {
+        "slug": "/our-program-details/Initial-Capital-Support-for-Women-IGAs",
+        "title": "Initial Capital Support for Women IGAs",
+        "image": "/images/Initial-Capital-Support-for-Women-IGAs.png",
+        "alt": "Initial Capital Support for Women IGAs"
+      },
+      {
+        "slug": "/our-program-details/Sponsorship",
+        "title": "Sponsorship",
+        "image": "/images/Sponsorship.jpeg",
+        "alt": "Sponsorship"
+      },
+      {
+        "slug": "/our-program-details/Empowering-Women-and-Youth-for-Productive-and-Sustainable-Empowerment",
+        "title": "Empowering Women and Youth for Productive and Sustainable Empowerment - Debre Birhan",
+        "image": "/images/Empowering-Women-and-Youth-for-Productive-and-Sustainable-Empowerment.jpeg",
+        "alt": "Empowering Women and Youth for Productive and Sustainable Empowerment - Debre Birhan"
+      },
+      {
+        "slug": "/our-program-details/Emergency-Support",
+        "title": "Emergency Support",
+        "image": "/images/Emergency-Support.jpeg",
+        "alt": "Emergency-Support"
+      },
+      {
+        "slug": "/our-program-details/Sewing-and-Fashion-Design",
+        "title": "Sewing and Fashion Design (Addis Ababa)",
+        "image": "/images/Sewing-and-Fashion-Design.jpeg",
+        "alt": "Sewing and Fashion Design (Addis Ababa)"
+      },
+      {
+        "slug": "/our-program-details/Prison-Services",
+        "title": "Prison Services",
+        "image": "/images/Prison-Services-1.jpeg",
+        "alt": "Prison-Services"
+      },
+
+      {
+        "slug": "/our-program-details/KCCBSSA-Girls-Football-Team-Support",
+        "title": "KCCBSSA Girls Football Team Support",
+        "image": "/images/KCCBSSA-Girls-Football-Team-Support.jpg",
+        "alt": "KCCBSSA Girls Football Team Support"
+      }
+    ],
+    "btn_slug": "/portfolio",
+    "btn_label": "Load More"
+  }
 ]

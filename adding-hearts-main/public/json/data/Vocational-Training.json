@@ -1,0 +1,31 @@
+[
+  {
+    "image": "/images/Vocational-Training.jpg",
+    "alt": "Vocational-Training",
+    "title": "Vocational Training",
+    "details": [
+      "Pro Kind supports vocational-training projects and drop-out programmes for young adults. The Community Center in Debre Berhan combines day care center and training place in one location. The young adults aged between 18 and 25 years can visit four-month computer courses and hairdressing trainings in full time to acquire a graduation. With the acquired certificates the chances to gain a foothold in the professional world increase a lot. The students are school leavers and school drop-outs from underprivileged families. After the completion of the training, the graduates are supported with a one-time start-up capital by the government which should help them to start their own business (e.g. establishing a hairdressing salon). Furthermore the government provides internships for the graduates, so that the acquired skills can be deepened and the entrance to the labour world is facilitated."
+    ],
+    "images": [
+      {
+        "image": "/images/Vocational-Training-1.jpg",
+        "alt": "../"
+      },
+      {
+        "image": "/images/Vocational-Training-2.jpg",
+        "alt": "../"
+      }
+    ],
+    "two_detail": [],
+    "images1": [
+      {
+        "image": "/images/Vocational-Training-3.jpeg",
+        "alt": "../"
+      },
+      {
+        "image": "/images/Vocational-Training-4.jpg",
+        "alt": "../"
+      }
+    ]
+  }
+]

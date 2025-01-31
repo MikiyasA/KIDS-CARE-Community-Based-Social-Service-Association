@@ -77,20 +77,30 @@ export default function Portfolio_Details({ initialValues }) {
                         </p>
                       );
                     })}
-                    <ul style={{ listStyleType: 'square', padding: '0px 40px' }}>
+                  <ul style={{ listStyleType: "square", padding: "0px 40px" }}>
                     {data.bullet_points &&
                       data.bullet_points.map((point, index) => {
-                        return (
-                          <li key={index}>
-                            {point}
-                          </li>
-                        )
-                      })
-                    }
-
+                        return <li key={index}>{point}</li>;
+                      })}
                   </ul>
 
-
+                  <div className="portfolio-thumbnails">
+                    {data.images1 &&
+                      data.images1.map((images_data, index) => {
+                        return (
+                          <Image
+                            key={index}
+                            src={images_data.image}
+                            alt={images_data.alt}
+                            width={592}
+                            height={287}
+                            // priority={false}
+                            data-aos="zoom-in"
+                            data-aos-duration="1500"
+                          />
+                        );
+                      })}
+                  </div>
 
                   <div
                     className="potfolio-ul"
@@ -103,8 +113,9 @@ export default function Portfolio_Details({ initialValues }) {
                           return (
                             <div className="faq_item" key={index}>
                               <div
-                                className={`faq_title ${index === activeIndex ? "active" : ""
-                                  }`}
+                                className={`faq_title ${
+                                  index === activeIndex ? "active" : ""
+                                }`}
                                 onClick={() => toggleAccordion(index)}
                               >
                                 {question_data.question}

@@ -1,34 +1,42 @@
 [
-    {
-        "image": "/images/Free-Kindergarten-Services.png",
-        "slug": "our-program-details/Free-Kindergarten-Services"
-    },
-    {
-        "image": "/images/Initial-Capital-Support-for-Women-IGAs.png",
-        "slug": "our-program-details/Initial-Capital-Support-for-Women-IGAs"
-    },
-    {
-        "image": "/images/Sponsorship.jpeg",
-        "slug": "our-program-details/Sponsorship"
-    },
-    {
-        "image": "/images/Empowering-Women-and-Youth-for-Productive-and-Sustainable-Empowerment.jpeg",
-        "slug": "our-program-details/Empowering-Women-and-Youth-for-Productive-and-Sustainable-Empowerment"
-    },
-    {
-        "image": "/images/Emergency-Support.jpeg",
-        "slug": "our-program-details/Emergency-Support"
-    },
-    {
-        "image": "/images/Sewing-and-Fashion-Design.jpeg",
-        "slug": "our-program-details/Sewing-and-Fashion-Design"
-    },
-    {
-        "image": "/images/Prison-Services-1.jpeg",
-        "slug": "our-program-details/Prison-Services"
-    },
-    {
-        "image": "/images/KCCBSSA-Girls-Football-Team-Support.jpg",
-        "slug": "our-program-details/KCCBSSA-Girls-Football-Team-Support"
-    }
+  {
+    "image": "/images/Day-Cares.jpg",
+    "slug": "our-program-details/Day-Cares"
+  },
+  {
+    "image": "/images/Vocational-Training.jpg",
+    "slug": "our-program-details/Vocational-Training"
+  },
+  {
+    "image": "/images/Sewing-and-Fashion-Design.jpeg",
+    "slug": "our-program-details/Sewing-and-Fashion-Design"
+  },
+  {
+    "image": "/images/Free-Kindergarten-Services.png",
+    "slug": "our-program-details/Free-Kindergarten-Services"
+  },
+  {
+    "image": "/images/Initial-Capital-Support-for-Women-IGAs.png",
+    "slug": "our-program-details/Initial-Capital-Support-for-Women-IGAs"
+  },
+  {
+    "image": "/images/Sponsorship.jpeg",
+    "slug": "our-program-details/Sponsorship"
+  },
+  {
+    "image": "/images/Empowering-Women-and-Youth-for-Productive-and-Sustainable-Empowerment.jpeg",
+    "slug": "our-program-details/Empowering-Women-and-Youth-for-Productive-and-Sustainable-Empowerment"
+  },
+  {
+    "image": "/images/Emergency-Support.jpeg",
+    "slug": "our-program-details/Emergency-Support"
+  },
+  {
+    "image": "/images/Prison-Services-1.jpeg",
+    "slug": "our-program-details/Prison-Services"
+  },
+  {
+    "image": "/images/KCCBSSA-Girls-Football-Team-Support.jpg",
+    "slug": "our-program-details/KCCBSSA-Girls-Football-Team-Support"
+  }
 ]

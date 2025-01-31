@@ -1,0 +1,34 @@
+[
+  {
+    "image": "/images/Day-Cares.jpg",
+    "alt": "Day-Cares",
+    "title": "Day Cares",
+    "label": "When our power of choice is untrammelled and when nothing prevents our being able to do what we like best",
+    "details": [
+      "The first years of a child's life are formative for the physical, emotional and intellectual development. Unfortunately, most underprivileged children in Ethiopia do not have the possibility to visit a kindergarten/preschool where they can develop these skills. The Day Care Centers in Addis Ababa and Debre Berhan provide the opportunity of preschool education and first school education. Children aged between 4 and 7 years from poorest families are being taken care of during daytime and do not spend their days alone at home or on the street. They can benefit from a daily structure which also includes a warm lunch."
+    ],
+    "images": [
+      {
+        "image": "/images/Day-Cares-1.jpeg",
+        "alt": "../"
+      },
+      {
+        "image": "/images/Day-Cares-2.jpg",
+        "alt": "../"
+      }
+    ],
+    "two_detail": [
+      "The Day Care Center in Addis Ababa is located on the outskirts, in the environment of poor developed quarters and provides a daily structure for approximately 120 children. Another Day Care Center in Debre Berhan also offers the possibility of preschool education for 120 children. The children are taught in classes with 30 – 40 pupils, basic knowledges in languages, maths and general education are imparted in an elementary school education. Usually the children spend 3 years in the Day Care afterwards they attend public school. Children with special development requirements (learning disability etc.) are supported through a special assistance."
+    ],
+    "images1": [
+      {
+        "image": "/images/Day-Cares-3.jpg",
+        "alt": "../"
+      },
+      {
+        "image": "/images/Day-Cares-4.jpg",
+        "alt": "../"
+      }
+    ]
+  }
+]
