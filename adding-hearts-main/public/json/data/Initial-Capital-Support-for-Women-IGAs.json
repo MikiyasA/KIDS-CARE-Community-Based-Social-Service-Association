@@ -1,22 +1,22 @@
 [
-    {
-        "image": "/images/Initial-Capital-Support-for-Women-IGAs.png",
-        "alt": "Initial-Capital-Support-for-Women-IGAs",
-        "title": "Initial Capital Support for Women IGAs",
-        "label": "",
-        "details": [
-            "Income generating activities can help vulnerable communities generate income to address their basic needs in a sustainable manner. Taking this into consideration KCCBSSA has been providing initial capital or seed money to destitute women who are referred from Women, Children and Social Affairs offices in our operational areas."
-        ],
-        "images": [
-            {
-                "image": "/images/Initial-Capital-Support-for-Women-IGAs-1.jpeg",
-                "alt": "Initial-Capital-Support-for-Women-IGAs"
-            },
-            {
-                "image": "/images/Initial-Capital-Support-for-Women-IGAs-2.png",
-                "alt": "Initial-Capital-Support-for-Women-IGAs2"
-            }
-        ],
-        "two_detail": [    ]
-    }
+  {
+    "image": "/images/Initial-Capital-Support-for-Women-IGAs.jpeg",
+    "alt": "Initial-Capital-Support-for-Women-IGAs",
+    "title": "Initial Capital Support for Women IGAs",
+    "label": "",
+    "details": [
+      "Income generating activities can help vulnerable communities generate income to address their basic needs in a sustainable manner. Taking this into consideration KCCBSSA has been providing initial capital or seed money to destitute women who are referred from Women, Children and Social Affairs offices in our operational areas."
+    ],
+    "images": [
+      {
+        "image": "/images/Initial-Capital-Support-for-Women-IGAs-1.jpeg",
+        "alt": "Initial-Capital-Support-for-Women-IGAs"
+      },
+      {
+        "image": "/images/Initial-Capital-Support-for-Women-IGAs-2.png",
+        "alt": "Initial-Capital-Support-for-Women-IGAs2"
+      }
+    ],
+    "two_detail": []
+  }
 ]

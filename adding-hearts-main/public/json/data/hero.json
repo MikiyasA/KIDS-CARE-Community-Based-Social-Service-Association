@@ -1,11 +1,11 @@
 [
-    {
-        "title": "Kids Care  Community Based Social Service Association",
-        "donat_btn_label": "Get help now",
-        "donat_btn_slug": "/donation",
-        "watch_btn_label": "Watch Video",
-        "watch_btn_slug": "https://www.youtube.com/watch?v=kOISEM6L4xk",
-        "image": "/images/home-pic.png",
-        "alt":"../"
-    }
+  {
+    "title": "Kids Care  Community Based Social Service Association",
+    "donat_btn_label": "Get help now",
+    "donat_btn_slug": "/donation",
+    "watch_btn_label": "Watch Video",
+    "watch_btn_slug": "https://www.youtube.com/watch?v=kOISEM6L4xk",
+    "image": "/images/home-pic.jpg",
+    "alt": "../"
+  }
 ]

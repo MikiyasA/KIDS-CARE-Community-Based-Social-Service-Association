@@ -1,11 +1,12 @@
 [
   {
-    "image": "/images/Sewing-and-Fashion-Design.jpeg",
+    "image": "/images/Sewing-and-Fashion-Design-2.jpg",
     "alt": "Sewing and Fashion Design (Addis Ababa)",
     "title": "Sewing and Fashion Design (Addis Ababa)",
     "label": "",
     "details": [
-      "KCCBSSA has recently started Training on Sewing and Fashion Design for Destitute women in Arada Sub City."
+      "In spring 2024 a new sewing project was launched in Addis Ababa. Through a tailoring training program, young women affected by poverty are supported on their path to financial and professional independence. The project offers a platform especially for young mothers to reengage in social life. The training gives them hope and a perspective for the future. They not only acquire valuable skills but also experience self-efficacy and gain a renewed feeling of self-worth.",
+      "Currently 20 young women are taught in two shifts. After learning basic sewing techniques, the participants are already able to sew school uniforms for the two day care centers. These uniforms are required by the government and need to be replaced regularly. This helps to reduce expenses for the two preschool projects."
     ],
     "images": [
       {
@@ -13,11 +14,14 @@
         "alt": "Sewing-and-Fashion-Design"
       },
       {
-        "image": "/images/Sewing-and-Fashion-Design-2.jpg",
+        "image": "/images/Sewing-and-Fashion-Design.jpeg",
         "alt": "Sewing-and-Fashion-Design"
       }
     ],
-    "two_detail": [],
+    "two_detail": [
+      "In Ethiopia women can earn their living by specializing in sewing modern and traditional clothing. After completing the course, the trainees can search for employment as seamstresses or become self-employed. Self-employment is an ideal option especially for young mothers, as it allows them to adapt their work schedules to their children's routines and to sew from home.",
+      "The course takes place on the former grounds of Kids Care, where the facilities can now ideally be used as offices and training rooms. Young mothers are allowed to bring their small children, who are cared for on-site."
+    ],
     "images1": [
       {
         "image": "/images/Sewing-and-Fashion-Design-3.jpg",
