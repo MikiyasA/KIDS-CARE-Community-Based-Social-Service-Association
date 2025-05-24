@@ -1919,11 +1919,17 @@ button.lets-play {
 }
 
 .wc-portfolio .portfolio-grid {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     grid-column-gap: 25px;
     grid-row-gap: 25px;
-    margin-bottom: 80px;
+    margin-bottom: 80px; */
+    display: grid;
+    margin-bottom: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    
 }
 
 .wc-portfolio .portfolio-grid .portfolio-content {

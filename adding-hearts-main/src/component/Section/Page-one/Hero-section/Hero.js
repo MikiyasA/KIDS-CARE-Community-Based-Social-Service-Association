@@ -1,3 +1,4 @@
+import { Group } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -175,13 +176,16 @@ export default function Hero({ initialValues }) {
                         </span>
                       </button>
                     </Link> */}
-                    <Image
-                      src={data.image}
-                      alt={data.alt}
-                      width={1396}
-                      height={772}
-                      priority
-                    />
+                    <Group justify="center" w={"100%"}>
+                      <Image
+                        src={data.image}
+                        alt={data.alt}
+                        width={700}
+                        height={400}
+                        style={{ maxWidth: 1000 }}
+                        priority
+                      />
+                    </Group>
                   </div>
                 </div>
               </div>

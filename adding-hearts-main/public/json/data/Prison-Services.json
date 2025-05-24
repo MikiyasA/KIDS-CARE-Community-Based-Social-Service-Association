@@ -1,20 +1,24 @@
 [
-    {
-        "image": "/images/Prison-Services-1.jpeg",
-        "alt": "Prison-Services",
-        "title": "Prison-Services",
-        "label": "",
-        "details": [
-            "Children with their mothers in prison, undoubtedly, are likely to face many challenges. To address some of the needs of these children KCCBSSA assigned one staff who cooks food for the children, “provide” Preprimary school like service and also comfort the children."
-        ],
-        "images": [
-            {
-                "image": "/images/Prison-Services-2.jpeg",
-                "alt": "Prison-Services"
-            }
-        ],
-        "two_detail": [
-            "The monthly financial assistance is specifically aimed at helping families cover educational costs and basic living expenses, enabling children to continue their schooling without interruption. Currently, we support 150 students, a number that has unfortunately decreased from 600 due to funding constraints. Our sponsorship initiatives are primarily funded through generous contributions from various donors, with Pro Kind Switzerland being a significant partner. Through this program, we are committed to transforming the lives of vulnerable children and their families, fostering a brighter future for all."
-        ]
-    }
+  {
+    "image": "/images/Prison-Services.jpg",
+    "alt": "Prison-Services",
+    "title": "Prison-Services",
+    "label": "",
+    "details": [
+      "Children with their mothers in prison, undoubtedly, are likely to face many challenges. To address some of the needs of these children KCCBSSA assigned one staff who cooks food for the children, “provide” Preprimary school like service and also comfort the children."
+    ],
+    "images": [
+      {
+        "image": "/images/Prison-Services-1.jpg",
+        "alt": "Prison-Services"
+      },
+      {
+        "image": "/images/Prison-Services-2.jpg",
+        "alt": "Prison-Services"
+      }
+    ],
+    "two_detail": [
+      "The monthly financial assistance is specifically aimed at helping families cover educational costs and basic living expenses, enabling children to continue their schooling without interruption. Currently, we support 150 students, a number that has unfortunately decreased from 600 due to funding constraints. Our sponsorship initiatives are primarily funded through generous contributions from various donors, with Pro Kind Switzerland being a significant partner. Through this program, we are committed to transforming the lives of vulnerable children and their families, fostering a brighter future for all."
+    ]
+  }
 ]
